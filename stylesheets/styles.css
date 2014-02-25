@@ -6,7 +6,9 @@ body *, *:after, *:before{
 }
 body{
   margin: 0;
-  font:  14px/14px arial, sans-serif;
+font-size: 100%;
+line-height: 1;
+font-family: Helvetica, Arial, sans-serif;
 }
 header{
   height: 40px;
@@ -45,7 +47,10 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
   font-weight: normal;
 }
-article{width:calc(100% - 310px);}
+article{
+  width:calc(100% - 310px);
+  padding: 20px;
+}
 footer{
   height: 40px;
   line-height: 40px;
