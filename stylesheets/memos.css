@@ -12,7 +12,9 @@ body{
   background-color: #333;
   color: #7d7e80;
 }
-
+a{
+  white-space: nowrap;
+}
 a:link, a:visited {
 color: #047ac6;
 }
@@ -61,7 +63,7 @@ p{
 }
 section > p{
   height: 40px;
-  padding: 10px 0 0 105px;
+  padding: 10px 0 0 165px;
   margin:0;
   border-bottom: 1px solid #b3b3b3;
   white-space: nowrap;
@@ -83,7 +85,7 @@ article{
 .article-area{
   overflow: auto;
   height: calc(100% - 60px);
-  padding: 20px;
+  padding:0 20px;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqIAAAAJCAYAAADpRU73AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAT1JREFUeNrsmcsOgkAMRalh7/9/pktj4tVEXYmJSks75ZwlQzt9DMwdMEmTmR2nBzYt8+n6FGT37fgaGwvyu9X93vZRvkaOgRzoQRVEK+lBkxxUyJcGvV8Buf47vsrurkFP8/PCOUAg2oZi8ZfNxhLmNeccvO29NutKYrqSKEFUA+KNHKrNqyLxqXgO3uJQznltGZ9H7G/jLyF6cdx4MsSIBfq3QrFEiALbmS3zIUZh3yJUzNfK1suXAudQoVgyDyGLdi8hem20WdkAPrt8mbNB6rCnL6GIxZ714Nd8fj3UPFcVi7NLvdXwfeA6/5x0GrEGDy0b5Hh5UXMARCl5UXMOfIVqMNPs4ZptLGJAjALwvgHWxXCNkcoIUeABA9YFAp3+AkCyEEx/SVcMCgAAAAD6c6AEAAAAAJDBTYABAJdpX/scQhN3AAAAAElFTkSuQmCC") -0px -0px no-repeat;
   background-size: 100% 9px;
 }
@@ -109,30 +111,40 @@ ul{
   list-style: none outside none
 }
 li{
-  padding: 8px;
+  padding:5px 8px;
   border-top: 1px solid #dfe0e2;
   background-color: #fff;
   color: #222;
-  font-size: .8em
+  font-size: .8em;
+  line-height: 16px;
 }
 li:first-child{
   border-top: 0 none
 }
-
-h1,h2,h3,h4,h5,h6{
+li div{
+  font-size: .9em
+}
+li span{
+  color: #005c78;
+  font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6{
   margin: 0;
   font-weight: normal;
 }
-
+li h4{
+  font-weight: bold
+}
 .tbl{
   border-bottom: 1px solid #dfe0e2;
   font-size: .8em
 }
 .td{
-    height: 30px;
+  height: 29px;
+  line-height: 29px;
   display: inline-block;
   vertical-align: top;
-  padding:5px 5px 0;
+  padding:0 5px;
   white-space: nowrap;
   text-overflow:ellipsis;
   overflow: hidden;
@@ -141,5 +153,10 @@ h1,h2,h3,h4,h5,h6{
 .tdr{
   width:122px;
   border-left:1px dotted #dfe0e2;
+}
+fieldset{
+  font-size: .8em;
+  margin: 20px 0;
+  border:1px solid #dfe0e2;
 }
 
