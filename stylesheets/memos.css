@@ -173,3 +173,6 @@ fieldset{
 .tbl-memos .td{
   height: auto
 }
+.fr{
+  float: right
+}
