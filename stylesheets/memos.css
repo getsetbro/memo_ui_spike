@@ -58,12 +58,15 @@ section{
   margin-left:140px;
   background-color: #f3f5f7;
 }
+small{
+  font-weight: bold
+}
 p{
   margin-top:0 
 }
 section > p{
   height: 40px;
-  padding: 10px 0 0 165px;
+  padding: 8px 0 0 165px;
   margin:0;
   border-bottom: 1px solid #b3b3b3;
   white-space: nowrap;
@@ -80,7 +83,7 @@ article{
 }
 .aside-area{
   overflow: auto;
-  height: calc(100% - 30px)
+  height: calc(100% - 60px)
 }
 .article-area{
   overflow: auto;
@@ -96,7 +99,7 @@ article{
   border:1px solid #dfe0e2;
   border-radius: 3px
 }
-.memo-history{
+.memo-data{
   color:#333;
   padding: 20px;
   font-size: .8em
@@ -137,7 +140,8 @@ li h4{
 }
 .tbl{
   border-bottom: 1px solid #dfe0e2;
-  font-size: .8em
+  font-size: .8em;
+  white-space: nowrap;
 }
 .td{
   height: 29px;
@@ -148,15 +152,24 @@ li h4{
   white-space: nowrap;
   text-overflow:ellipsis;
   overflow: hidden;
-  width:calc(100% - 144px);
+  width:calc(100% - 125px);
 }
 .tdr{
-  width:122px;
+  width:auto;
   border-left:1px dotted #dfe0e2;
+  text-align: right
 }
 fieldset{
   font-size: .8em;
   margin: 20px 0;
   border:1px solid #dfe0e2;
 }
-
+.daterange{
+  width:auto;
+}
+.daterange input{
+  width: 45px
+}
+.tbl-memos .td{
+  height: auto
+}
