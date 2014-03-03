@@ -66,7 +66,7 @@ p{
 }
 section > p{
   height: 40px;
-  padding: 8px 0 0 165px;
+  padding: 8px 0 0 162px;
   margin:0;
   border-bottom: 1px solid #b3b3b3;
   white-space: nowrap;
@@ -87,7 +87,7 @@ article{
 }
 .article-area{
   overflow: auto;
-  height: calc(100% - 60px);
+  height: calc(100% - 90px);
   padding:0 20px;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqIAAAAJCAYAAADpRU73AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAT1JREFUeNrsmcsOgkAMRalh7/9/pktj4tVEXYmJSks75ZwlQzt9DMwdMEmTmR2nBzYt8+n6FGT37fgaGwvyu9X93vZRvkaOgRzoQRVEK+lBkxxUyJcGvV8Buf47vsrurkFP8/PCOUAg2oZi8ZfNxhLmNeccvO29NutKYrqSKEFUA+KNHKrNqyLxqXgO3uJQznltGZ9H7G/jLyF6cdx4MsSIBfq3QrFEiALbmS3zIUZh3yJUzNfK1suXAudQoVgyDyGLdi8hem20WdkAPrt8mbNB6rCnL6GIxZ714Nd8fj3UPFcVi7NLvdXwfeA6/5x0GrEGDy0b5Hh5UXMARCl5UXMOfIVqMNPs4ZptLGJAjALwvgHWxXCNkcoIUeABA9YFAp3+AkCyEEx/SVcMCgAAAAD6c6AEAAAAAJDBTYABAJdpX/scQhN3AAAAAElFTkSuQmCC") -0px -0px no-repeat;
   background-size: 100% 9px;
@@ -169,9 +169,6 @@ fieldset{
 }
 .daterange input{
   width: 45px
-}
-.tbl-memos .td{
-  height: auto
 }
 .fr{
   float: right
