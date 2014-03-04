@@ -16,61 +16,37 @@
         <p class="grad1">
             <input type="search" placeholder="SEARCH" class="searchbox" /><!-- .
             --><button type="button" class="searchbutton"><i class="fa fa-search"></i></button> |
-            <button type="button"><i class="fa fa-plus-circle"></i> New Memo</button> |
+            <button type="button" id="newMemo"><i class="fa fa-plus-circle"></i> New Memo</button> |
             <button type="button"><i class="fa fa-download"></i> Export / Print</button>
         </p>
         <aside>
             <div class="tbl grad1">
-                <div class="td">Company Name</div><!-- . 
-                --><div class="td tdr">Date &#9660;</div>
+                <div class="td">30 of 160 by Date Descending &#9661;</div>
             </div>
             <div class="aside-area">
-                <ul>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
-                    <li><h4>Memo subject title name ... <span>1/1/14</span></h4><div>Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. Company name &amp; Associates LLC. Inc. ...</div></li>
+                <ul id="memoList">
+                    <li><span>1/1/14</span><h4>Memo subject title name thats longer than youd hope</h4><div>Uno Company Inc., Deuce Company &amp; Associates ...</div><div>Lorem ipsum dolor sit amet, consectetur adipisicing ...</div></li>
                 </ul>
             </div>
             <div class="tbl tbl-memos">
-                <div class="td">
-                    <small>Days: </small><a href="#">7</a> | <b>30</b> | <a href="#">45</a> | <a href="#">90</a>
-                </div><!-- . 
-                --><div class="td daterange">
-                    <input type="text" placeholder="START"/> | <input type="text" placeholder="END">
-                </div>
+                <div class="td daterange"><input type="text" placeholder="START"/> | <input type="text" placeholder="END"></div>
+                <div class="td"><button>&lt;</button> <b>1</b> <button>2</button> <button>3</button> <button>4</button> <button>&gt;</button></div>
             </div>
         </aside><!--
     .--><article>
             <div class="tbl">
-                <div class="td"><small>Subject: </small>Memo subject title name</div><!-- . 
-                --><div class="td tdr"><button><i class="fa fa-trash-o"></i> Delete</button></div>
+                <div class="td tdr"><button><i class="fa fa-trash-o"></i> Delete</button></div>
+                <div class="td"><small>Subject: </small>Memo subject title name</div>
             </div>
             <div class="tbl">
                 <div class="td"><small>Author: </small>Firstname Lastname | <small>Updated: </small>12/12/2013</div>
             </div>
             <div class="article-area">
-                <fieldset class="mm-companies"><legend>Companie(s)</legend>
+                <fieldset class="mm-companies"><legend>Regarding</legend>
                     <button class="fr"><i class="fa fa-plus-circle"></i> Add</button><a href="#">Company Name &amp; Associates LLC. [x]</a> | <a href="#">Company Name LLC Inc [x]</a>
                 </fieldset>
                 <fieldset class="memo-info">
-                    <legend>Memo Info:</legend>
+                    <legend>Comment</legend>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, vitae, commodi, unde sequi ex veritatis nulla omnis sapiente dicta recusandae delectus sit voluptatum mollitia blanditiis soluta. Voluptas, rerum vitae sapiente!</p>
                 </fieldset>
                 <div class="memo-data">
@@ -81,12 +57,14 @@
                 </fieldset>
             </div>
             <div class="tbl tbl-attached">
-                <div class="td"><small>Attached: </small><a href="#">Excel-File.xls [x]</a> | <a href="#">PDF-File.pdf [x]</a> | <a href="#">3 more...</a></div><!-- . 
-                --><div class="td tdr"><button><i class="fa fa-paperclip"></i> Attach</button></div>
+                <div class="td tdr"><button><i class="fa fa-paperclip"></i> Attach</button></div>
+                <div class="td"><small>Attached: </small><a href="#">Excel-File.xls [x]</a> | <a href="#">PDF-File.pdf [x]</a> | <a href="#">3 more</a></div>
             </div>
         </article>
     </section>
 
     <script src="javascripts/scale.fix.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="javascripts/memos.js"></script>
 </body>
 </html>

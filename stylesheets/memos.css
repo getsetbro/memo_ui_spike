@@ -21,7 +21,7 @@ a:hover, a:active {
   color: #005c78;
 }
 button, select {
-  border: 1px solid #ccc;
+  border: 1px solid #b6bdc3;
   background-color: #eee;
   text-transform: uppercase;
   border-radius: 3px;
@@ -31,9 +31,7 @@ button, select {
   padding: 2px 6px 3px;
 }
 button:hover, select:hover {
-  border: 1px solid #bbb;
   background-color: #ddd;
-  color: #555;
 }
 input {
   border: 1px solid #ccc;
@@ -74,7 +72,7 @@ p {
 }
 section > p {
   height: 40px;
-  padding: 8px 0 0 162px;
+  padding: 8px 0 0 8px;
   margin:0;
   border-bottom: 1px solid #ccc;
   white-space: nowrap;
@@ -86,7 +84,8 @@ section > p {
 .searchbox {
   border-radius: 3px 0 0 3px;
   border-right:0 none;
-  width: 164px;
+  width: 168px;
+  margin-left: 150px;
 }
 .searchbutton {
   border-radius: 0 3px 3px 0;
@@ -131,7 +130,9 @@ legend {
   padding-bottom:1px;
 }
 .memo-info legend{
+  background-color: #fff;  
 }
+
 .memo-data {
   color:#333;
   padding: 20px;
@@ -157,7 +158,10 @@ li:first-child {
   border-top: 0 none
 }
 li div {
-  font-size: .9em
+  font-size: .9em;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
 }
 li span {
   color: #005c78;
@@ -169,7 +173,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 li h4 {
-  font-weight: bold
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .tbl {
   border-bottom: 1px solid #dfe0e2;
@@ -186,18 +193,13 @@ li h4 {
 .td {
   height: 29px;
   line-height: 29px;
-  float: left;
   padding:0 8px;
   white-space: nowrap;
   text-overflow:ellipsis;
   overflow: hidden;
-  width:calc(100% - 130px);
 }
-.td:first-child {
-  padding-right: 0
-}
+
 .tdr {
-  width:auto;
   border-left:1px dotted #dfe0e2;
   text-align: center;
   float: right;
