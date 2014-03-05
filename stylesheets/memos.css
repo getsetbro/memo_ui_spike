@@ -228,3 +228,12 @@ i {
   border-bottom: 0 none;
   border-top: 1px solid #dfe0e2;
 }
+
+.mm-companies a, #attachments a {
+  border-right:1px solid #999;
+  padding:0 8px;
+}
+.mm-companies a:last-child, #attachments a:last-child{
+  border-right:0 none;
+  padding-right:0;
+}

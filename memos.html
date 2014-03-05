@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Memo ui</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
     <link rel="stylesheet" href="stylesheets/memos.css" />
 </head>
@@ -14,14 +14,15 @@
     <nav>Memos</nav>
     <section>
         <p class="grad1">
-            <input type="search" placeholder="SEARCH" class="searchbox" id="searchbox" /><!-- .
+            <input type="search" placeholder="Regarding" class="searchbox" id="searchbox" /><!-- .
             --><button type="button" class="searchbutton" id="searchbutton"><i class="fa fa-search"></i></button> |
             <button type="button" id="newMemo"><i class="fa fa-plus-circle"></i> New Memo</button> |
-            <button type="button"><i class="fa fa-download"></i> Export / Print</button>
+            <button type="button" id="export"><i class="fa fa-download"></i> Export / Print</button>
         </p>
         <aside>
             <div class="tbl grad1">
-                <div class="td">30 of 160 by Date Descending &#9661;</div>
+                <div class="td tdr">Date &#9662;</div>
+                <div class="td">Memo</div>
             </div>
             <div class="aside-area">
                 <ul id="memoList">
@@ -36,7 +37,6 @@
     .--><article></article>
     </section>
 
-    <script src="javascripts/scale.fix.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="javascripts/memos.js"></script>
 </body>
