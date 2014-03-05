@@ -1,0 +1,2254 @@
+{
+  "Data": [
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Test add memo",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consequatur, necessitatibus, perferendis, voluptate unde accusamus vero ipsum commodi animi totam omnis sunt quis reiciendis. Consectetur, laboriosam illum nulla adipisci ex.Test",
+      "CreatedOn": "03/04/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "aa16277b-389b-db11-8461-00188b2e03d9",
+          "Name": "ABC 123",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "ABC 123",
+      "Regarding": {
+        "ID": "aa16277b-389b-db11-8461-00188b2e03d9",
+        "Name": "ABC 123",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Marine, Joshua",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "ABC 123",
+      "AccountId": "AA16277B-389B-DB11-8461-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "8b41dba5-c0a3-e311-8760-00505692010a",
+      "AttachmentURL": "../Annotation/GetImageById?id=8341dba5-c0a3-e311-8760-00505692010a&imagetype=memo",
+      "FileName": "Koala.jpg",
+      "ID": "8341dba5-c0a3-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Retest 40532",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, unde reprehenderit doloremque quod veniam nemo beatae voluptate maxime accusantium similique possimus tenetur fugiat cupiditate nostrum perferendis quis voluptates voluptatem provident.validation of 40532 - can't reproduce",
+      "CreatedOn": "03/04/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "84f27e2a-159b-db11-8461-00188b2e03d9",
+          "Name": "PsyAtick Corporation",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "PsyAtick Corporation",
+      "Regarding": {
+        "ID": "84f27e2a-159b-db11-8461-00188b2e03d9",
+        "Name": "PsyAtick Corporation",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fryer, Pam",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "PsyAtick Corporation",
+      "AccountId": "84F27E2A-159B-DB11-8461-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "88534c6a-bea3-e311-8760-00505692010a",
+      "AttachmentURL": "../Annotation/GetImageById?id=80534c6a-bea3-e311-8760-00505692010a&imagetype=memo",
+      "FileName": "Create New List without additional.docx",
+      "ID": "80534c6a-bea3-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": null,
+      "Comments": null,
+      "CreatedOn": "03/04/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "9e9fd938-aeda-e211-a648-a4badb47a701",
+          "Name": "PsyAtick Benfield",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "PsyAtick Benfield",
+      "Regarding": {
+        "ID": "9e9fd938-aeda-e211-a648-a4badb47a701",
+        "Name": "PsyAtick Benfield",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fryer, Pam",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "PsyAtick Benfield",
+      "AccountId": "9E9FD938-AEDA-E211-A648-A4BADB47A701",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "c26c91e2-bda3-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "pam",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe facere laudantium et similique quos quis. Eaque, ullam, earum, nam, consequatur alias similique sint animi dolorum voluptatum fuga delectus aliquid incidunt.pam",
+      "CreatedOn": "03/03/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "9215a5a7-f5df-dd11-9705-00188b2e03d9",
+          "Name": "Bulaon, May",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "845d01bf-9aec-dc11-9b96-00188b2e03d9",
+          "Name": " Callahan, Jaonne",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "560ef03a-3a9c-e011-bb52-005056927f52",
+          "Name": " Faraone, Camillo",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "contact",
+      "RecipientNames": "Bulaon, May~ Callahan, Jaonne~ Faraone, Camillo",
+      "Regarding": {
+        "ID": "9215a5a7-f5df-dd11-9705-00188b2e03d9",
+        "Name": "Bulaon, May",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fryer, Pam",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "9215A5A7-F5DF-DD11-9705-00188B2E03D9, 845D01BF-9AEC-DC11-9B96-00188B2E03D9, 560EF03A-3A9C-E011-BB52-005056927F52",
+      "Contact": "Bulaon, May~ Callahan, Jaonne~ Faraone, Camillo",
+      "Account": "",
+      "AccountId": "",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "8b620d4b-21a3-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "newtest",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quia fuga voluptates cupiditate. Cum, repudiandae, vero iure rem adipisci libero consequatur totam maiores laborum iusto obcaecati odio explicabo dicta architecto.new test mi",
+      "CreatedOn": "03/03/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "ce2999d1-b0de-e211-81fc-a4badb47a701",
+          "Name": "C+C MF Memos - Market Intelligence",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "C+C MF Memos - Market Intelligence",
+      "Regarding": {
+        "ID": "ce2999d1-b0de-e211-81fc-a4badb47a701",
+        "Name": "C+C MF Memos - Market Intelligence",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Basheer, Mohamed",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "C+C MF Memos - Market Intelligence",
+      "AccountId": "CE2999D1-B0DE-E211-81FC-A4BADB47A701",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "0f1a890f-0fa3-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "testmemo",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, asperiores quis fugit itaque nisi placeat vitae quidem aut autem aliquam? Excepturi cupiditate natus eos quia impedit quis laborum laboriosam adipisci?market intelligentc test",
+      "CreatedOn": "03/03/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "d1250d13-60b3-e211-9fa5-005056920143",
+          "Name": "JP PANDC Asset Management",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "JP PANDC Asset Management",
+      "Regarding": {
+        "ID": "d1250d13-60b3-e211-9fa5-005056920143",
+        "Name": "JP PANDC Asset Management",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Basheer, Mohamed",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "JP PANDC Asset Management",
+      "AccountId": "D1250D13-60B3-E211-9FA5-005056920143",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "cf27b74e-0da3-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Test Memo",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ipsa, molestias optio voluptates totam consectetur doloremque in quisquam magnam unde voluptatem tempore aliquid cum neque impedit qui earum officia itaque.Test",
+      "CreatedOn": "02/28/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "e9b66077-329c-db11-a00b-00188b2e03d9",
+          "Name": "PANDC &amp; Cheves",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "PANDC &amp; Cheves",
+      "Regarding": {
+        "ID": "e9b66077-329c-db11-a00b-00188b2e03d9",
+        "Name": "PANDC & Cheves",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Patel, Sanjay",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "PANDC &amp; Cheves",
+      "AccountId": "E9B66077-329C-DB11-A00B-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "b3c5c303-a2a0-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Chrome Frame Removal - Multiple Companies",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, tempore iusto tenetur modi sed totam veniam eaque libero obcaecati nisi officiis hic at iste maxime doloribus quisquam repudiandae quae fuga?appears to work with chrome",
+      "CreatedOn": "02/26/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "746eb77e-1b9b-db11-8461-00188b2e03d9",
+          "Name": "ABC 123",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "aa16277b-389b-db11-8461-00188b2e03d9",
+          "Name": " LaSalle Bank N.A.",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "ABC 123~ LaSalle Bank N.A.",
+      "Regarding": {
+        "ID": "aa16277b-389b-db11-8461-00188b2e03d9",
+        "Name": "ABC 123",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fryer, Pam",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "ABC 123~ LaSalle Bank N.A.",
+      "AccountId": "746EB77E-1B9B-DB11-8461-00188B2E03D9, AA16277B-389B-DB11-8461-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "5692b3c7-289f-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Chrome Frame Removal - Multiple Contacts",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, dicta, sequi, saepe omnis nulla aut ipsum ratione ullam quis alias necessitatibus nobis quia similique nisi aperiam ut labore aliquam fugit!PForR - appears to work chrome",
+      "CreatedOn": "02/26/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "585158d9-10e0-dd11-9705-00188b2e03d9",
+          "Name": "Abel, Ryan",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "5814e0fd-fe9b-df11-acdf-00188b2e04ee",
+          "Name": " Abinder, Susan",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "51da567e-eddd-e211-b2e7-00505692015c",
+          "Name": " Aguirre, Pamela",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "contact",
+      "RecipientNames": "Abel, Ryan~ Abinder, Susan~ Aguirre, Pamela",
+      "Regarding": {
+        "ID": "51da567e-eddd-e211-b2e7-00505692015c",
+        "Name": "Aguirre, Pamela",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fryer, Pam",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "585158D9-10E0-DD11-9705-00188B2E03D9, 5814E0FD-FE9B-DF11-ACDF-00188B2E04EE, 51DA567E-EDDD-E211-B2E7-00505692015C",
+      "Contact": "Abel, Ryan~ Abinder, Susan~ Aguirre, Pamela",
+      "Account": "",
+      "AccountId": "",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "266d3438-289f-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Chrome Frame Removal - Contact",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, enim harum tempore deserunt expedita odit veritatis a nihil praesentium doloribus quasi minima voluptatum perferendis alias impedit! Blanditiis nemo doloribus similique!PForR Contact",
+      "CreatedOn": "02/26/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "fd5d8059-69df-dd11-9705-00188b2e03d9",
+          "Name": "Bennett, Ryan",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "contact",
+      "RecipientNames": "Bennett, Ryan",
+      "Regarding": {
+        "ID": "fd5d8059-69df-dd11-9705-00188b2e03d9",
+        "Name": "Bennett, Ryan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fryer, Pam",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "FD5D8059-69DF-DD11-9705-00188B2E03D9",
+      "Contact": "Bennett, Ryan",
+      "Account": "",
+      "AccountId": "",
+      "Attachment": null,
+      "AttachmentId": "3bd9839a-209f-e311-8760-00505692010a",
+      "AttachmentURL": "../Annotation/GetImageById?id=35d9839a-209f-e311-8760-00505692010a&imagetype=memo",
+      "FileName": "My Overview - Delete Memo passed.docx",
+      "ID": "35d9839a-209f-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Chrome Frame Removal - Company",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, recusandae, voluptate eveniet soluta veniam beatae sapiente eius id labore sint architecto incidunt obcaecati enim amet tempora aliquid quis veritatis eligendi.PForR Regarding Company",
+      "CreatedOn": "02/26/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "dd339db5-d0de-dd11-9705-00188b2e03d9",
+          "Name": "ABC Box Company",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "ABC Box Company",
+      "Regarding": {
+        "ID": "dd339db5-d0de-dd11-9705-00188b2e03d9",
+        "Name": "ABC Box Company",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fryer, Pam",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "ABC Box Company",
+      "AccountId": "DD339DB5-D0DE-DD11-9705-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "de4355b3-1b9f-e311-8760-00505692010a",
+      "AttachmentURL": "../Annotation/GetImageById?id=d64355b3-1b9f-e311-8760-00505692010a&imagetype=memo",
+      "FileName": "Pipeline by Company.docx",
+      "ID": "d64355b3-1b9f-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "wwPants memo",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, natus, doloribus, laudantium omnis suscipit debitis facilis similique quod expedita iusto architecto a! Molestiae, eum ipsum laboriosam necessitatibus placeat distinctio quas.test memo.",
+      "CreatedOn": "02/25/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "ad5bb20b-ec9a-db11-8461-00188b2e03d9",
+          "Name": "wwPants Baker",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "wwPants Baker",
+      "Regarding": {
+        "ID": "ad5bb20b-ec9a-db11-8461-00188b2e03d9",
+        "Name": "wwPants Baker",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "wwPants Baker",
+      "AccountId": "AD5BB20B-EC9A-DB11-8461-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "4b8e5d40-bd94-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "f76f",
+      "Comments": null,
+      "CreatedOn": "02/20/2014",
+      "DueDate": null,
+      "Recipients": null,
+      "RecipientTypeName": "account",
+      "RecipientNames": "",
+      "Regarding": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": null,
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Martynov, Maksim",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "",
+      "AccountId": "",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "27510c9e-3d9a-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Test Lucy - 13",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, tempora, ipsa, enim soluta culpa voluptatibus reiciendis maiores nostrum dolorem quidem accusantium ullam nihil laudantium eius ab sint unde sequi repellendus.Test Lucy - 1",
+      "CreatedOn": "02/14/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "ab4a684b-7b1f-dc11-9c79-00188b2e03d9",
+          "Name": "JP PANDC Chase &amp; Company",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "JP PANDC Chase &amp; Company",
+      "Regarding": {
+        "ID": "ab4a684b-7b1f-dc11-9c79-00188b2e03d9",
+        "Name": "JP PANDC Chase & Company",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fletcher, Lucy",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "JP PANDC Chase &amp; Company",
+      "AccountId": "AB4A684B-7B1F-DC11-9C79-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "bb58602b-5190-e311-8760-00505692010a",
+      "AttachmentURL": "../Annotation/GetImageById?id=b558602b-5190-e311-8760-00505692010a&imagetype=memo",
+      "FileName": "Report.pdf",
+      "ID": "b558602b-5190-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "memo with multiple companies",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, saepe ab aspernatur dolor porro nemo in vel! Ducimus, neque, explicabo eveniet autem fugiat totam repellendus eaque modi sapiente dolor quaerat.asdfasdfasdfasdfasdfas",
+      "CreatedOn": "02/14/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "22488d86-1770-e011-b307-0026b952b32d",
+          "Name": "TR Synergizr xfer Corp",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "349dd783-db2d-e211-83c9-00505692015c",
+          "Name": " TR Engel Group, LLC",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "TR Synergizr xfer Corp~ TR Engel Group, LLC",
+      "Regarding": {
+        "ID": "349dd783-db2d-e211-83c9-00505692015c",
+        "Name": "TR Synergizr xfer Corp",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "TR Synergizr xfer Corp~ TR Engel Group, LLC",
+      "AccountId": "22488D86-1770-E011-B307-0026B952B32D, 349DD783-DB2D-E211-83C9-00505692015C",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "6f774c1d-9b95-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "memo with multiple contacts",
+      "Comments": null,
+      "CreatedOn": "02/14/2014",
+      "DueDate": null,
+      "Recipients": [],
+      "RecipientTypeName": "contact",
+      "RecipientNames": ", Amy~ Abbott, Amy",
+      "Regarding": {
+        "ID": "4996fc4a-a6df-dd11-9705-00188b2e03d9",
+        "Name": ", Amy",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "4FCB7534-119E-DB11-8303-00188B2E03D9, 4996FC4A-A6DF-DD11-9705-00188B2E03D9, 40BFE0A1-97EC-DC11-9B96-00188B2E03D9, 98B846CB-ADF8-DD11-A697-00188B2E03D9",
+      "Contact": ", Amy~ Abbott, Amy",
+      "Account": "",
+      "AccountId": "",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "be8fa2e1-9a95-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "creating data",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat in temporibus nisi cum officia atque debitis id dolores et consectetur! Obcaecati maiores repellat accusamus animi autem consectetur unde minima eos.this is my test memo.",
+      "CreatedOn": "02/13/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "d9750f23-7fdf-dd11-9705-00188b2e03d9",
+          "Name": "Abbott, Susan",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "585158d9-10e0-dd11-9705-00188b2e03d9",
+          "Name": " Abbracciamento, Susan",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "e57d41cc-bcab-df11-8518-0050569266c3",
+          "Name": " Abinder, Susan",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "contact",
+      "RecipientNames": "Abbott, Susan~ Abbracciamento, Susan~ Abinder, Susan",
+      "Regarding": {
+        "ID": "d9750f23-7fdf-dd11-9705-00188b2e03d9",
+        "Name": "Abbott, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "D9750F23-7FDF-DD11-9705-00188B2E03D9, 585158D9-10E0-DD11-9705-00188B2E03D9, E57D41CC-BCAB-DF11-8518-0050569266C3",
+      "Contact": "Abbott, Susan~ Abbracciamento, Susan~ Abinder, Susan",
+      "Account": "",
+      "AccountId": "",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "a309fce3-4293-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "second test memo",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eius, veniam, nobis laboriosam excepturi impedit explicabo maxime tempore voluptatem adipisci minima quam ratione esse molestias voluptates voluptatum quaerat. Eum, dolor.asdfasdfsdfsdafasfsdafsjl;jljk;ljlj;lj;lj;lj;lj;lkj;lj;ljl;jlkj",
+      "CreatedOn": "02/13/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "ad5bb20b-ec9a-db11-8461-00188b2e03d9",
+          "Name": "wwPants Baker",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "wwPants Baker",
+      "Regarding": {
+        "ID": "ad5bb20b-ec9a-db11-8461-00188b2e03d9",
+        "Name": "wwPants Baker",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "wwPants Baker",
+      "AccountId": "AD5BB20B-EC9A-DB11-8461-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "51e4bb5c-bd94-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "asdfsdf",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, beatae, laborum, dolores quasi excepturi amet saepe quo ullam at tenetur temporibus obcaecati voluptate perferendis laboriosam et aut debitis in nulla.sdfasdfsad",
+      "CreatedOn": "02/12/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "2560b857-0d32-e011-8593-00505692362f",
+          "Name": "AB &amp; Sons",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "99bf6914-1120-dc11-a100-00188b2e03d9",
+          "Name": " AB &amp; T Telecom",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "b6d6a735-389b-db11-8461-00188b2e03d9",
+          "Name": " AB Applied Biosystems",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "f48b1b38-4ee3-e211-81fc-a4badb47a701",
+          "Name": " AB Arch LLC",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "AB &amp; Sons~ AB &amp; T Telecom~ AB Applied Biosystems~ AB Arch LLC",
+      "Regarding": {
+        "ID": "f48b1b38-4ee3-e211-81fc-a4badb47a701",
+        "Name": "AB & T Telecom",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "AB &amp; Sons~ AB &amp; T Telecom~ AB Applied Biosystems~ AB Arch LLC",
+      "AccountId": "2560B857-0D32-E011-8593-00505692362F, 99BF6914-1120-DC11-A100-00188B2E03D9, B6D6A735-389B-DB11-8461-00188B2E03D9, F48B1B38-4EE3-E211-81FC-A4BADB47A701",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "15126551-2a94-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "test memo 1",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, commodi, molestiae molestias sint corrupti dolorem veniam sequi consequatur consectetur accusamus tenetur quasi velit. Vitae, repellat in ea debitis iste a.aaaa",
+      "CreatedOn": "02/11/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "2a652949-e5de-dd11-9705-00188b2e03d9",
+          "Name": "AB Biodisk",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "AB Biodisk",
+      "Regarding": {
+        "ID": "2a652949-e5de-dd11-9705-00188b2e03d9",
+        "Name": "AB Biodisk",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "AB Biodisk",
+      "AccountId": "2A652949-E5DE-DD11-9705-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "a86bed69-6493-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "test memo  ",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, odit animi eaque reiciendis quos totam earum cum laudantium fugit voluptates? Alias, reiciendis, dolorem quos repellendus nesciunt hic excepturi amet iusto.adsfsdfsdfads",
+      "CreatedOn": "02/11/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "2a652949-e5de-dd11-9705-00188b2e03d9",
+          "Name": "AB Biodisk",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "AB Biodisk",
+      "Regarding": {
+        "ID": "2a652949-e5de-dd11-9705-00188b2e03d9",
+        "Name": "AB Biodisk",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "AB Biodisk",
+      "AccountId": "2A652949-E5DE-DD11-9705-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "5790f78b-6493-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "test2",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, aperiam, quisquam, maiores, dicta omnis eius similique ipsa pariatur earum officia temporibus suscipit reiciendis excepturi tempora labore officiis aliquam. Quia, dolorem.test",
+      "CreatedOn": "02/11/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "2455334f-0ddf-dd11-9705-00188b2e03d9",
+          "Name": "AA Achor Bolts Inc",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "5a7f0b1e-dd7a-dd11-ba66-00188b2e03d9",
+          "Name": " BnB Test Organization - Katherine",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "5ea5c2a2-68a1-e211-84f5-00505692015c",
+          "Name": " Davaco, Inc.",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "695532c7-ed9a-db11-8461-00188b2e03d9",
+          "Name": " Davange Group",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "dc188227-644b-e011-aef1-005056927f52",
+          "Name": " Davar Rad",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "dfca890a-67c4-e111-bb5e-00505692362f",
+          "Name": " JPS Real Estate Inc",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "AA Achor Bolts Inc~ BnB Test Organization - Katherine~ Davaco, Inc.~ Davange Group~ Davar Rad~ JPS Real Estate Inc",
+      "Regarding": {
+        "ID": "2455334f-0ddf-dd11-9705-00188b2e03d9",
+        "Name": "BnB Test Organization - Katherine",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Basheer, Mohamed",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "AA Achor Bolts Inc~ BnB Test Organization - Katherine~ Davaco, Inc.~ Davange Group~ Davar Rad~ JPS Real Estate Inc",
+      "AccountId": "2455334F-0DDF-DD11-9705-00188B2E03D9, 5A7F0B1E-DD7A-DD11-BA66-00188B2E03D9, 5EA5C2A2-68A1-E211-84F5-00505692015C, 695532C7-ED9A-DB11-8461-00188B2E03D9, DC188227-644B-E011-AEF1-005056927F52, DFCA890A-67C4-E111-BB5E-00505692362F",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "8d63f997-fa46-e311-b2d6-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "adfasdf",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, nihil, nam nisi praesentium eaque sed rem consectetur nesciunt voluptatibus non pariatur iusto sequi iste illo blanditiis voluptate est reiciendis eos.adfasdf",
+      "CreatedOn": "02/11/2014",
+      "DueDate": null,
+      "Recipients": [],
+      "RecipientTypeName": "contact",
+      "RecipientNames": "aaaaaaaa, aaaaaaaaasusan~ Abinder, Susan~ Adams, Patrick~ Ahn, Patrick~ Albert, Patrick~ Boyce, Patrick~ Boyle, J. Patrick~ Boyle, Patrick",
+      "Regarding": {
+        "ID": "585158d9-10e0-dd11-9705-00188b2e03d9",
+        "Name": "Abinder, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "022E0BF5-A5DF-DD11-9705-00188B2E03D9, 445C502E-BADF-DD11-9705-00188B2E03D9, E8E805B7-D9DF-DD11-9705-00188B2E03D9, 8E9EE665-E5DF-DD11-9705-00188B2E03D9, 585158D9-10E0-DD11-9705-00188B2E03D9, 1CA32DEE-7A9B-DB11-B8B5-00188B2E04EE, 36FB6824-B68D-E311-8760-00505692010A, 36FB6824-B68D-E311-8760-00505692010A, 606348DE-6021-DF11-A014-0050569266C3, FEC1A886-C661-DE11-B48A-0050569266C3",
+      "Contact": "aaaaaaaa, aaaaaaaaasusan~ Abinder, Susan~ Adams, Patrick~ Ahn, Patrick~ Albert, Patrick~ Boyce, Patrick~ Boyle, J. Patrick~ Boyle, Patrick",
+      "Account": "",
+      "AccountId": "",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "eda5a559-4393-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "test data",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, doloribus praesentium ipsum similique autem eum distinctio iste quo dignissimos aut sapiente totam at officiis amet harum culpa obcaecati laboriosam vel.jdjelk;",
+      "CreatedOn": "02/11/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "d1250d13-60b3-e211-9fa5-005056920143",
+          "Name": "JP PANDC Asset Management",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "JP PANDC Asset Management",
+      "Regarding": {
+        "ID": "d1250d13-60b3-e211-9fa5-005056920143",
+        "Name": "JP PANDC Asset Management",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Licudine, Ryan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "JP PANDC Asset Management",
+      "AccountId": "D1250D13-60B3-E211-9FA5-005056920143",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "56b148b9-3b93-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Test Lucy",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quis odio placeat pariatur rem atque alias temporibus similique inventore praesentium provident delectus aliquam. Et, nisi velit accusamus nobis totam vitae.Test Lucy",
+      "CreatedOn": "02/07/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "ab4a684b-7b1f-dc11-9c79-00188b2e03d9",
+          "Name": "JP PANDC Chase &amp; Company",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "JP PANDC Chase &amp; Company",
+      "Regarding": {
+        "ID": "ab4a684b-7b1f-dc11-9c79-00188b2e03d9",
+        "Name": "JP PANDC Chase & Company",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fletcher, Lucy",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "JP PANDC Chase &amp; Company",
+      "AccountId": "AB4A684B-7B1F-DC11-9C79-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "cbcc560b-5190-e311-8760-00505692010a",
+      "AttachmentURL": "../Annotation/GetImageById?id=c5cc560b-5190-e311-8760-00505692010a&imagetype=memo",
+      "FileName": "Report.pdf",
+      "ID": "c5cc560b-5190-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Susan's test memo",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, pariatur, dolorem, animi, ab nesciunt odio repellat necessitatibus facilis eveniet adipisci quod neque dolores! Suscipit voluptatum consequuntur alias consequatur illum quam.Just learning CapLink",
+      "CreatedOn": "01/31/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "11d24189-3fdf-dd11-9705-00188b2e03d9",
+          "Name": ", Deborah",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "76857ce6-d2df-dd11-9705-00188b2e03d9",
+          "Name": " , Deina",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "a43e8eb3-d3df-dd11-9705-00188b2e03d9",
+          "Name": " , Diana",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "contact",
+      "RecipientNames": ", Deborah~ , Deina~ , Diana",
+      "Regarding": {
+        "ID": "11d24189-3fdf-dd11-9705-00188b2e03d9",
+        "Name": ", Deina",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "11D24189-3FDF-DD11-9705-00188B2E03D9, 76857CE6-D2DF-DD11-9705-00188B2E03D9, A43E8EB3-D3DF-DD11-9705-00188B2E03D9",
+      "Contact": ", Deborah~ , Deina~ , Diana",
+      "Account": "",
+      "AccountId": "",
+      "Attachment": null,
+      "AttachmentId": "0b76fd7e-9b8a-e311-8760-00505692010a",
+      "AttachmentURL": "../Annotation/GetImageById?id=3eb4000e-9b8a-e311-8760-00505692010a&imagetype=memo",
+      "FileName": "phonebook testing results 013114.docx",
+      "ID": "3eb4000e-9b8a-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": " a test memo",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, iusto, aspernatur ipsum accusamus itaque officia fugiat labore expedita architecto sunt! Voluptatum dicta eveniet ipsum quidem sit hic facilis aspernatur sunt.no comment at this time",
+      "CreatedOn": "01/29/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "e3276672-533c-e311-9d45-00505692010a",
+          "Name": "Test Company Record",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "Test Company Record",
+      "Regarding": {
+        "ID": "e3276672-533c-e311-9d45-00505692010a",
+        "Name": "Test Company Record",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Trick, Susan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "Test Company Record",
+      "AccountId": "E3276672-533C-E311-9D45-00505692010A",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "f5125028-2089-e311-8760-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Test Memo",
+      "Comments": null,
+      "CreatedOn": "01/09/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "9ef5803f-307f-e111-9b53-005056927f52",
+          "Name": "PANDC, LLC",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "PANDC, LLC",
+      "Regarding": {
+        "ID": "9ef5803f-307f-e111-9b53-005056927f52",
+        "Name": "PANDC, LLC",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Patel, Sanjay",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "PANDC, LLC",
+      "AccountId": "9EF5803F-307F-E111-9B53-005056927F52",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "4f67b046-a93d-e311-9d45-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Test Memo 2 [With Attachment]",
+      "Comments": null,
+      "CreatedOn": "01/09/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "0065519e-b8b0-e111-99ea-005056927f52",
+          "Name": "PANDC, Stan-The-Man, Smith, Purple Dynosaur LLC",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "PANDC, Stan-The-Man, Smith, Purple Dynosaur LLC",
+      "Regarding": {
+        "ID": "0065519e-b8b0-e111-99ea-005056927f52",
+        "Name": "PANDC, Stan-The-Man, Smith, Purple Dynosaur LLC",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Patel, Sanjay",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "PANDC, Stan-The-Man, Smith, Purple Dynosaur LLC",
+      "AccountId": "0065519E-B8B0-E111-99EA-005056927F52",
+      "Attachment": null,
+      "AttachmentId": "7be3c41b-aa3d-e311-9d45-00505692010a",
+      "AttachmentURL": "../Annotation/GetImageById?id=73e3c41b-aa3d-e311-9d45-00505692010a&imagetype=memo",
+      "FileName": "BillToContact.png",
+      "ID": "73e3c41b-aa3d-e311-9d45-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Test memo 501 --",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, magni, vitae, similique mollitia reprehenderit quaerat distinctio expedita reiciendis at quisquam et nulla atque quod itaque numquam consectetur iure recusandae ab.Test only",
+      "CreatedOn": "01/08/2014",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "0065519e-b8b0-e111-99ea-005056927f52",
+          "Name": "PANDC, Stan-The-Man, Smith, Purple Dynosaur LLC",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        },
+        {
+          "ID": "e8b1abf5-5354-dd11-83c5-00188b2e03d9",
+          "Name": " PANDCBirge' &amp; Associates Inc.",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "PANDC, Stan-The-Man, Smith, Purple Dynosaur LLC~ PANDCBirge' &amp; Associates Inc.",
+      "Regarding": {
+        "ID": "0065519e-b8b0-e111-99ea-005056927f52",
+        "Name": "PANDC, Stan-The-Man, Smith, Purple Dynosaur LLC",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Licudine, Ryan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "PANDC, Stan-The-Man, Smith, Purple Dynosaur LLC~ PANDCBirge' &amp; Associates Inc.",
+      "AccountId": "0065519E-B8B0-E111-99EA-005056927F52, E8B1ABF5-5354-DD11-83C5-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "9aac935c-ae78-e311-b8a1-00505692010a",
+      "AttachmentURL": "../Annotation/GetImageById?id=92b851f0-ad78-e311-b8a1-00505692010a&imagetype=memo",
+      "FileName": "FXSEXT.ecf",
+      "ID": "92b851f0-ad78-e311-b8a1-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Propety",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit id totam nostrum asperiores porro quam corrupti voluptatum fugit. Obcaecati, aspernatur dolorum soluta beatae doloribus facere rerum architecto vitae aliquam fugit.Interested and want more info",
+      "CreatedOn": "12/17/2013",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "99eefa04-dd02-e311-81fc-a4badb47a701",
+          "Name": "Marsden, Denise",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "contact",
+      "RecipientNames": "Marsden, Denise",
+      "Regarding": {
+        "ID": "99eefa04-dd02-e311-81fc-a4badb47a701",
+        "Name": "Marsden, Denise",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Kruger, Thania",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "99EEFA04-DD02-E311-81FC-A4BADB47A701",
+      "Contact": "Marsden, Denise",
+      "Account": "",
+      "AccountId": "",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "36f4270f-6567-e311-b8a1-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "test",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, cum amet modi quia suscipit laborum atque veritatis fuga sequi doloremque! Rem maiores ullam odit dolorum iste consequuntur vitae. Labore, accusamus.test",
+      "CreatedOn": "12/06/2013",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "ab4a684b-7b1f-dc11-9c79-00188b2e03d9",
+          "Name": "JP PANDC Chase &amp; Company",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "JP PANDC Chase &amp; Company",
+      "Regarding": {
+        "ID": "ab4a684b-7b1f-dc11-9c79-00188b2e03d9",
+        "Name": "JP PANDC Chase & Company",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Basheer, Mohamed",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "JP PANDC Chase &amp; Company",
+      "AccountId": "AB4A684B-7B1F-DC11-9C79-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "edb9b4df-d05e-e311-b8a1-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "test memo #1 RML - 111413",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, facilis suscipit maxime aliquam fuga corporis itaque placeat nesciunt. Sapiente, laborum earum perferendis quae fugiat ab optio repudiandae eum fuga neque.this is the description section of the test memo.  The first part of this sentence should appear on the nightly memo email.  The rest of the description should appear on the website as well as the memo section within CapLink.",
+      "CreatedOn": "11/18/2013",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "211d6f1a-eb9a-db11-8461-00188b2e03d9",
+          "Name": "AEW Capital Management, L.P.",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "AEW Capital Management, L.P.",
+      "Regarding": {
+        "ID": "211d6f1a-eb9a-db11-8461-00188b2e03d9",
+        "Name": "AEW Capital Management, L.P.",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Licudine, Ryan",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "AEW Capital Management, L.P.",
+      "AccountId": "211D6F1A-EB9A-DB11-8461-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "10894f4d-3c4d-e311-b2d6-00505692010a",
+      "AttachmentURL": "../Annotation/GetImageById?id=08894f4d-3c4d-e311-b2d6-00505692010a&imagetype=memo",
+      "FileName": "Chicago Cisco IP Phone User Guide.docx",
+      "ID": "08894f4d-3c4d-e311-b2d6-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "test",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, error, odio eaque molestiae voluptatum quas inventore magnam veniam vel quasi soluta sint adipisci sapiente suscipit explicabo fuga harum libero. Quae.test",
+      "CreatedOn": "11/05/2013",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "2d988eab-f79b-db11-a00b-00188b2e03d9",
+          "Name": "JP Associates",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "JP Associates",
+      "Regarding": {
+        "ID": "2d988eab-f79b-db11-a00b-00188b2e03d9",
+        "Name": "JP Associates",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Basheer, Mohamed",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "JP Associates",
+      "AccountId": "2D988EAB-F79B-DB11-A00B-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "2d297281-7046-e311-b2d6-00505692010a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Basketball Compass",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, animi, labore repellendus modi sed quibusdam explicabo dolor incidunt quos cumque veniam perspiciatis eum perferendis laboriosam optio debitis praesentium illo vitae. We have been dealing with either Craig out of NY or team in Dallas.",
+      "CreatedOn": "08/13/2013",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "ec381420-1d9c-db11-a00b-00188b2e03d9",
+          "Name": "Basketball Compass Bank",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "Basketball Compass Bank",
+      "Regarding": {
+        "ID": "ec381420-1d9c-db11-a00b-00188b2e03d9",
+        "Name": "Basketball Compass Bank",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Largay, Keith",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "Basketball Compass Bank",
+      "AccountId": "EC381420-1D9C-DB11-A00B-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "dc22d621-4900-e311-afb1-00505692015c",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Updated Loan Programs",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, facere, nesciunt veritatis illum odio impedit dolorem iste animi reiciendis eligendi tenetur voluptate repudiandae atque quod id excepturi asperiores sed officia!Multifamily Construction to Permanent loans in Major U.S. Markets up to 70% of cost.",
+      "CreatedOn": "07/18/2013",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "34f7d21d-0b9b-db11-8461-00188b2e03d9",
+          "Name": "Quadro Squire Real Estate Advisors LLC",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "Quadro Squire Real Estate Advisors LLC",
+      "Regarding": {
+        "ID": "34f7d21d-0b9b-db11-8461-00188b2e03d9",
+        "Name": "Quadro Squire Real Estate Advisors LLC",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Board, Jimmy",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "Quadro Squire Real Estate Advisors LLC",
+      "AccountId": "34F7D21D-0B9B-DB11-8461-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "e04b52de-3eee-e211-81fc-a4badb47a701",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Updated Cap Costs from Chatham",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, corporis reprehenderit fugiat quas dicta magni perferendis qui aliquam molestias minus vel numquam autem tempora ducimus fuga aperiam commodi amet eveniet.Yr",
+      "CreatedOn": "07/17/2013",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "ce2999d1-b0de-e211-81fc-a4badb47a701",
+          "Name": "C+C MF Memos - Market Intelligence",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "C+C MF Memos - Market Intelligence",
+      "Regarding": {
+        "ID": "ce2999d1-b0de-e211-81fc-a4badb47a701",
+        "Name": "C+C MF Memos - Market Intelligence",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Board, Jimmy",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "C+C MF Memos - Market Intelligence",
+      "AccountId": "CE2999D1-B0DE-E211-81FC-A4BADB47A701",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "8c5f4576-f2ee-e211-a17c-00505692015a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "Pancy Real Estate - Meeting Review 6 18 13",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, reiciendis, unde dolore voluptatibus atque autem eaque facere velit quos aspernatur. Beatae, qui aspernatur autem voluptates fugit libero repudiandae tenetur reiciendis.Very active on hotels; 15% of overall portfolio is hospitality",
+      "CreatedOn": "07/11/2013",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "e88b8922-4207-e211-a740-005056920143",
+          "Name": "Pancy Real Estate",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "Pancy Real Estate",
+      "Regarding": {
+        "ID": "e88b8922-4207-e211-a740-005056920143",
+        "Name": "Pancy Real Estate",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fish, Tom",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "Pancy Real Estate",
+      "AccountId": "E88B8922-4207-E211-A740-005056920143",
+      "Attachment": null,
+      "AttachmentId": "1a1dc73b-2ed9-e211-b344-00505692015c",
+      "AttachmentURL": "../Annotation/GetImageById?id=121dc73b-2ed9-e211-b344-00505692015c&imagetype=memo",
+      "FileName": "Pancy Real Estate - Meeting Review 6 18 13.docx",
+      "ID": "121dc73b-2ed9-e211-b344-00505692015c",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "PANDC Stan-The-Man",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia, tempora, perspiciatis soluta sunt aliquid explicabo aperiam enim dignissimos dicta veniam vero provident facilis voluptate repudiandae quam minima doloremque illum!we are in the process of signing up. AND, for an extra 2bps, you get the last 10 years open at par!  only ones we know of doing it!",
+      "CreatedOn": "07/11/2013",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "d6178b63-eb9a-db11-8461-00188b2e03d9",
+          "Name": "PANDC Stan-The-Man",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "PANDC Stan-The-Man",
+      "Regarding": {
+        "ID": "d6178b63-eb9a-db11-8461-00188b2e03d9",
+        "Name": "PANDC Stan-The-Man",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Fish, Tom",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "PANDC Stan-The-Man",
+      "AccountId": "D6178B63-EB9A-DB11-8461-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "a6a099f4-c5ce-e211-b08b-00505692015a",
+      "ClientID": null,
+      "IsActive": true
+    },
+    {
+      "MemoType": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Phone Call",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Subject": "PeekCoTrain – Value-add Fund",
+      "Comments": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, et, nobis, quos nemo veritatis sed quis dolor quidem libero reprehenderit delectus itaque omnis deserunt? Dolor voluptatem cupiditate deserunt voluptate eligendi!Like the yield play here (8-9% cap rates) with similar debt pricing that is in primary markets\n•\tAgnostic of geography, asset class ",
+      "CreatedOn": "07/10/2013",
+      "DueDate": null,
+      "Recipients": [
+        {
+          "ID": "1204e2ce-129b-db11-8461-00188b2e03d9",
+          "Name": "PeekCoTrain Commercial Mortgage Securities Trust",
+          "EntityName": null,
+          "IsNull": false,
+          "SubItems": null,
+          "IsActive": false
+        }
+      ],
+      "RecipientTypeName": "account",
+      "RecipientNames": "PeekCoTrain Commercial Mortgage Securities Trust",
+      "Regarding": {
+        "ID": "1204e2ce-129b-db11-8461-00188b2e03d9",
+        "Name": "PeekCoTrain Commercial Mortgage Securities Trust",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "Author": {
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Name": "Li, Shuoyu",
+        "EntityName": null,
+        "IsNull": false,
+        "SubItems": [],
+        "IsActive": false
+      },
+      "ContactId": "",
+      "Contact": "",
+      "Account": "PeekCoTrain Commercial Mortgage Securities Trust",
+      "AccountId": "1204E2CE-129B-DB11-8461-00188B2E03D9",
+      "Attachment": null,
+      "AttachmentId": "00000000-0000-0000-0000-000000000000",
+      "AttachmentURL": null,
+      "FileName": null,
+      "ID": "9b20ab83-6ee9-e211-81fc-a4badb47a701",
+      "ClientID": null,
+      "IsActive": true
+    }
+  ],
+  "FromIndex": 1,
+  "ToIndex": 40,
+  "TotalRecords": 50,
+  "SortBy": null,
+  "Direction": null
+}

@@ -153,6 +153,13 @@ li {
   background-color: #fff;
   color: #222;
   font-size: .8em;
+  cursor: pointer;
+}
+li:hover{
+  background-color: #d1d4d7;
+}
+li.selected{
+  background-color: #ecf0f3;
 }
 li:first-child {
   border-top: 0 none
