@@ -1,0 +1,28 @@
+#ui-datepicker-div {
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: .8em;
+    color: #333;
+    border: 1px solid #ccc
+}
+.ui-datepicker-header{
+  text-align: center;
+}
+
+.ui-datepicker-prev{
+  margin-right: 85px
+}
+
+#ui-datepicker-div a{
+  border: 1px solid #b6bdc3;
+  background-color: #eee;
+  color: #7d7e80;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 1px 2px;
+    min-width: 20px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}

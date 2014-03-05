@@ -33,6 +33,10 @@ button, select {
 button:hover, select:hover {
   background-color: #ddd;
 }
+button[disabled]{
+  border: 1px solid #ddd;
+  cursor: default;
+}
 input {
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -70,7 +74,7 @@ small {
 p {
   margin-top:0
 }
-section > p {
+section .p {
   height: 40px;
   padding: 8px 0 0 8px;
   margin:0;
@@ -81,11 +85,14 @@ section > p {
   background-color: #e9edef;
   background-image: linear-gradient(#f5f7f8, #e9edef);
 }
+.grad2 {
+  background-color: #e9edef;
+  background-image: linear-gradient(#e9edef, #d9d9d9);
+}
 .searchbox {
   border-radius: 3px 0 0 3px;
   border-right:0 none;
-  width: 168px;
-  margin-left: 150px;
+  width: 148px;
 }
 .searchbutton {
   border-radius: 0 3px 3px 0;
@@ -108,6 +115,12 @@ article {
   padding:0 20px;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqIAAAAJCAYAAADpRU73AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAT1JREFUeNrsmcsOgkAMRalh7/9/pktj4tVEXYmJSks75ZwlQzt9DMwdMEmTmR2nBzYt8+n6FGT37fgaGwvyu9X93vZRvkaOgRzoQRVEK+lBkxxUyJcGvV8Buf47vsrurkFP8/PCOUAg2oZi8ZfNxhLmNeccvO29NutKYrqSKEFUA+KNHKrNqyLxqXgO3uJQznltGZ9H7G/jLyF6cdx4MsSIBfq3QrFEiALbmS3zIUZh3yJUzNfK1suXAudQoVgyDyGLdi8hem20WdkAPrt8mbNB6rCnL6GIxZ714Nd8fj3UPFcVi7NLvdXwfeA6/5x0GrEGDy0b5Hh5UXMARCl5UXMOfIVqMNPs4ZptLGJAjALwvgHWxXCNkcoIUeABA9YFAp3+AkCyEEx/SVcMCgAAAAD6c6AEAAAAAJDBTYABAJdpX/scQhN3AAAAAElFTkSuQmCC") -0px -0px no-repeat;
   background-size: 100% 9px;
+}
+textarea{
+  border:1px solid #dfe0e2;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 1em;
 }
 fieldset {
   font-size: .8em;
@@ -212,14 +225,14 @@ li h4 {
   float: right;
 }
 .daterange {
-  width: auto;
-  float: right;
+  display: inline-block;
 }
 .daterange input {
-  width: 50px
+  width: 62px
 }
 .fr {
-  float: right
+  float: right;
+  margin:-25px -15px 0 0;
 }
 i {
   font-size:14px;
@@ -236,4 +249,16 @@ i {
 .mm-companies a:last-child, #attachments a:last-child{
   border-right:0 none;
   padding-right:0;
+}
+#subject{
+  width:calc(100% - 50px);
+}
+.save-edit,.edit-mode .edit-memo{
+  display: none
+}
+.edit-mode .save-edit{
+  display: inline;
+}
+[contenteditable=true]{
+  background-color: lightgreen
 }
