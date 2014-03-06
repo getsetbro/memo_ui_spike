@@ -11,39 +11,44 @@
 </head>
 
 <body>
-    <header></header>
-    <nav>Memos</nav>
+    <header class="clearfix">
+        <div class="pull-right user"><i class="fa fa-user"></i> User McGoo</div>
+        App
+    </header>
+    <nav>
+        <p>Tabs</p>
+        <small>Memos</small>
+    </nav>
     <section>
         <div class="p grad1">
             <input type="search" placeholder="Regarding" class="searchbox" id="searchbox" /><!-- .
             --><button type="button" class="searchbutton" id="searchbutton"><i class="fa fa-search"></i></button> | 
             <div class="daterange">
-                <input type="text" placeholder="Start date"/>-<input type="text" placeholder="End date"> <button><i class="fa fa-filter"></i></button>
+                <input type="text" placeholder="Start date"/><input type="text" placeholder="End date"> <button><i class="fa fa-filter"></i></button>
             </div> |
             <button type="button" id="newMemo"><i class="fa fa-plus-circle"></i> New Memo</button>
         </div>
         <aside>
             <div class="tbl grad1">
-                <div class="td tdr">Date &#9662;</div>
+                <div class="td tdr">Updated &#9662;</div>
                 <div class="td">Memos </div>
             </div>
             <div class="aside-area">
-                <ul id="memoList">
-                    <li><span>1/1/14</span><h4>Memo subject title name thats longer than youd hope</h4><div>Uno Company Inc., Deuce Company &amp; Associates ...</div><div>Lorem ipsum dolor sit amet, consectetur adipisicing ...</div></li>
-                </ul>
+                <ul id="memoList"><li>Loading...</li></ul>
             </div>
             <div class="tbl tbl-memos">
                 <div class="td tdr">30 of 90</div>
                 <div class="td"><button disabled="true">&lt;</button> <b>1</b> <button>2</button> <button>3</button> <button>&gt;</button></div>
             </div>
         </aside><!--
-    .--><article></article>
+    .--><article><p>Loading...</p></article>
     </section>
 
     <script src="//code.jquery.com/jquery-latest.min.js"></script>
-    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="//www.parsecdn.com/js/parse-1.2.17.min.js"></script>
+    <script src="javascripts/moment.min.js"></script>
     <script src="javascripts/memos.js"></script>
-    <script>$( ".daterange input" ).datepicker();
-</script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script>$( ".daterange input" ).datepicker();</script>
 </body>
 </html>

@@ -52,10 +52,11 @@ hr {
 }
 header {
   height: 40px;
+  line-height: 40px;
   background-color: #333;
   background-image: linear-gradient(#444, #222);
   border-bottom: 2px solid #c30000;
-  text-align: center;
+  padding: 0 10px
 }
 nav {
   position: absolute;
@@ -81,14 +82,21 @@ section .p {
   border-bottom: 1px solid #ccc;
   white-space: nowrap;
 }
+.clearfix:after{
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.pull-right{
+  float:right;
+}
 .grad1 {
   background-color: #e9edef;
   background-image: linear-gradient(#f5f7f8, #e9edef);
 }
-.grad2 {
-  background-color: #e9edef;
-  background-image: linear-gradient(#e9edef, #d9d9d9);
-}
+
 .searchbox {
   border-radius: 3px 0 0 3px;
   border-right:0 none;
@@ -139,7 +147,6 @@ legend {
 }
 .memo-info {
   background-color: #fff;
-  font-size: 1em;
   padding-bottom:1px;
 }
 .memo-info legend{
@@ -160,7 +167,7 @@ ul {
   padding: 0;
   list-style: none outside none
 }
-li {
+#memoList li {
   padding:5px 8px;
   border-top: 1px solid #dfe0e2;
   background-color: #fff;
@@ -168,22 +175,23 @@ li {
   font-size: .8em;
   cursor: pointer;
 }
-li:hover{
+#memoList li:hover{
   background-color: #d1d4d7;
+  border-top: 1px solid #ccc;
 }
-li.selected{
+#memoList li.selected{
   background-color: #ecf0f3;
 }
-li:first-child {
+#memoList li:first-child {
   border-top: 0 none
 }
-li div {
+#memoList li div {
   font-size: .9em;
   white-space: nowrap;
   text-overflow:ellipsis;
   overflow: hidden;
 }
-li span {
+#memoList li span {
   color: #005c78;
   font-weight: bold;
   float:right;
@@ -192,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal;
 }
-li h4 {
+#memoList li h4 {
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
@@ -259,6 +267,13 @@ i {
 .edit-mode .save-edit{
   display: inline;
 }
-[contenteditable=true]{
-  background-color: lightgreen
+.editmodeshow{
+  visibility: hidden;
 }
+.edit-mode .editmodeshow{
+  visibility: visible;
+}
+[contenteditable=true]{
+  background-color: lightgreen;
+}
+
