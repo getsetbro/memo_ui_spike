@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Memo ui</title>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
     <link rel="stylesheet" href="stylesheets/memos.css" />
     <link rel="stylesheet" href="stylesheets/datepicker.css" />
@@ -23,15 +23,19 @@
         <div class="p grad1">
             <input type="search" placeholder="Regarding" class="searchbox" id="searchbox" /><!-- .
             --><button type="button" class="searchbutton" id="searchbutton"><i class="fa fa-search"></i></button> | 
-            <div class="daterange">
-                <input type="text" placeholder="Start date"/><input type="text" placeholder="End date"> <button><i class="fa fa-filter"></i></button>
-            </div> |
             <button type="button" id="newMemo"><i class="fa fa-plus-circle"></i> New Memo</button>
         </div>
         <aside>
             <div class="tbl grad1">
-                <div class="td tdr">Updated &#9662;</div>
-                <div class="td">Memos </div>
+                <div class="daterange td tdr">
+                    <input type="text" placeholder="Start date"/><input type="text" placeholder="End date"> <button><i class="fa fa-filter"></i></button>
+                </div>
+                <div class="td">
+                    Days: 
+                    <label><input type="checkbox"> 7</label> 
+                    <label><input type="checkbox"> 30</label> 
+                    <label><input type="checkbox"> 60</label>
+                </div>
             </div>
             <div class="aside-area">
                 <ul id="memoList"><li>Loading...</li></ul>
@@ -50,5 +54,7 @@
     <script src="javascripts/memos.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script>$( ".daterange input" ).datepicker();</script>
+    <script src="javascripts/scale.fix.js"></script>
+
 </body>
 </html>

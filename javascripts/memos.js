@@ -111,7 +111,7 @@ articleEl.on('click', '#saveEdit', function() {
     sorted[currentMemo].MemoType = obj.MemoType.Name;
     sorted[currentMemo].FileName = obj.FileName;
     sorted[currentMemo].Updated = moment(result.updatedAt);
-    sorted[currentMemo].UpdatedAt = moment(result.updatedAt).format("MM/DD/YY h:mm");
+    sorted[currentMemo].UpdatedAt = moment(result.updatedAt).format("MM/DD/YY hA");
 
     // articleEl.find('.may-edit').attr('contenteditable', 'false');
     // articleEl.removeClass('edit-mode');
@@ -152,9 +152,9 @@ articleEl.on('click', '#saveMemo', function() {
           CreatedBy: "McGoo, User",
           FileName: filename,
           MemoType: "Phone Call",
-          CreatedOn: moment(result.createdAt).format("MM/DD/YY h:mm"),
+          CreatedOn: moment(result.createdAt).format("MM/DD/YY hA"),
           Updated: moment(result.updatedAt),
-          UpdatedAt: moment(result.updatedAt).format("MM/DD/YY h:mm")
+          UpdatedAt: moment(result.updatedAt).format("MM/DD/YY hA")
       });
       appendList(makeMemoList());
       memoListEl.find('li').eq(0).click();
@@ -203,7 +203,7 @@ var makeMemoList = function() {
         ;
   });
   return memoList.join('');
-}
+};
 
 var sortList = function (lst) {
   sorted = lst.sort(function(obj1, obj2) {
@@ -223,16 +223,16 @@ var gotMemos = function(d) {
           CreatedBy: o1.CreatedBy.Name,
           FileName: o1.FileName,
           MemoType: o1.MemoType.Name,
-          CreatedOn: moment(o1.createdAt).format("MM/DD/YY h:mm"),
+          CreatedOn: moment(o1.createdAt).format("MM/DD/YY hA"),
           Updated: moment(o1.updatedAt),
-          UpdatedAt: moment(o1.updatedAt).format("MM/DD/YY h:mm")
+          UpdatedAt: moment(o1.updatedAt).format("MM/DD/YY hA")
       };
   });
   //update sorted with sorted list
   sortList(unsortedList);
   //build list with sorted arr
   appendList(makeMemoList());
-}
+};
 
 $.ajax({
     type: "GET",
@@ -242,14 +242,14 @@ $.ajax({
     //click first one after items are appended to list
     memoListEl.find('li').eq(0).click();
 }).fail(function( jqXHR, textStatus, errorThrown ) {
-	alert('Sorry, this app was unable to get the data it needs.')
+	alert('Sorry, this app was unable to get the data it needs.');
 });
 
 $('#searchbutton').click(function(){
 	var searchterm = $('#searchbox').val();
 	var dt = '';
 	if(searchterm){
-		dt = 'where={"Regarding.Name": "'+searchterm+'" }'
+		dt = 'where={"Regarding.Name": "'+searchterm+'" }';
 	}
 	$.ajax({
     type: "GET",
@@ -260,7 +260,7 @@ $('#searchbutton').click(function(){
     //click first one after items are appended to list
     memoListEl.find('li').eq(0).click();
 	}).fail(function( jqXHR, status, err ) {
-		alert('Sorry, this app was unable to get the data it needs.')
+		alert('Sorry, this app was unable to get the data it needs.');
 	});
 });
 
