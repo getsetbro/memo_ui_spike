@@ -153,7 +153,6 @@ legend {
   padding-bottom:1px;
 }
 
-
 .memo-data {
   color:#333;
   padding: 12px;
@@ -243,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 .daterange input {
-  width: 62px
+  width: 68px
 }
 .fr {
   float: right;
@@ -269,10 +268,10 @@ i {
 #subject{
   width:calc(100% - 50px);
 }
-.save-edit,.edit-mode .edit-memo{
+.editmode-btn,.edit-mode .edit-memo{
   display: none
 }
-.edit-mode .save-edit{
+.edit-mode .editmode-btn{
   display: inline;
 }
 .editmodeshow{

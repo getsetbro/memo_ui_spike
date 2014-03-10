@@ -19,7 +19,8 @@ $.ajaxSetup({
 });
 
 //new memo template
-var newMemoHTM = '<div class="tbl"><div class="td tdr"><button id="saveMemo"><i class="fa fa-save"></i> Save</button></div>' +
+var newMemoHTM = '<div class="tbl"><div class="td tdr">'+
+	'<button id="saveMemo"><i class="fa fa-save"></i> Save</button> <button id="cancelNew"><i class="fa fa-save"></i> Cancel</button></div>' +
 	'<div class="td"><small>Subject: </small><input placeholder="New subject here" id="subject"/></div></div>' +
 	'<div class="tbl"><div class="td"><small>Author: </small><input placeholder="Add author here" id="author"/></div></div>' +
 	'<div class="article-area">'+
@@ -47,7 +48,7 @@ memoListEl.on("click", "li", function(a) {
 	appendArticle('<div class="tbl"><div class="td tdr"><button id="deleteMemo"><i class="fa fa-trash-o"></i> Archive</button></div>' +
 		'<div class="td"><small>Subject: </small><span class="may-edit" id="subject">' + obj.Subject + '</span></div></div>' +
 		'<div class="tbl"><div class="td tdr"><button id="editMemo" class="edit-memo"><i class="fa fa-edit"></i> Edit</button>' +
-		'<button id="saveEdit" class="save-edit"><i class="fa fa-save"></i> Save</button></div>' +
+		'<button id="saveEdit" class="editmode-btn"><i class="fa fa-save"></i> Save</button> <button id="cancelEdit" class="editmode-btn"><i class="fa fa-save"></i> Cancel</button></div>' +
 		'<div class="td"><small>Author: </small><span class="may-edit" id="author">' + obj.Author + '</span></div></div>' +
 		'<div class="article-area">'+
 		'<fieldset class="memo-info"><legend>Comment</legend><p id="comments" class="may-edit">' + comment + '</p></fieldset>' +
@@ -191,6 +192,10 @@ articleEl.on('click', '#addRegarding', function() {
 	}
 });
 
+articleEl.on('click', '#cancelNew, #cancelEdit', function() {
+	memoListEl.find('li').eq(0).click();
+});
+
 articleEl.on('click', '#addFile', function() {
 	//splice out deleted item and rebuild left
 	var file = window.prompt("Please add a file here.", "New File.ext");
@@ -201,15 +206,10 @@ articleEl.on('click', '#addFile', function() {
 
 articleEl.on('click', 'a', function(e) {
 	e.preventDefault();
-	// if (window.confirm("Do you want to remove this?")) {
-	//   $(this).remove();
-	// }
 });
+
 memoListEl.on('click', '.selectbox', function(e) {
 	e.stopPropagation();
-	// if (window.confirm("Do you want to remove this?")) {
-	//   $(this).remove();
-	// }
 });
 
 var appendList = function(listArr) {
@@ -231,13 +231,6 @@ var makeMemoList = function() {
 	return memoList.join('');
 };
 
-// var sortList = function(lst) {
-//     sorted = lst.sort(function(obj1, obj2) {
-//         //return new Date(obj2.CreatedOn).getTime() - new Date(obj1.CreatedOn).getTime();
-//         return obj2.Updated - obj1.Updated;
-//     });
-// };
-
 var gotMemos = function(d) {
 	sorted = $.map(d.results, function(o1, i1) {
 		return {
@@ -254,8 +247,7 @@ var gotMemos = function(d) {
 			UpdatedAt: moment(o1.updatedAt).format("MM/DD/YY hA")
 		};
 	});
-	//update sorted with sorted list
-	//sortList(unsortedList);
+
 	//build list with sorted arr
 	appendList(makeMemoList());
 };
