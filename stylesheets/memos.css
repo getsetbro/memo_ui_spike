@@ -274,6 +274,9 @@ i {
   visibility: visible;
 }
 [contenteditable=true]{
-  background-color: lightgreen;
+  background-color: lightyellow;
+  padding: 2px 8px;
+  border:1px dotted lightcoral;
+  display: inline-block;
 }
 

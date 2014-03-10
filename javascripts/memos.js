@@ -119,7 +119,7 @@ articleEl.on('click', '#saveEdit', function() {
 
 		// articleEl.find('.may-edit').attr('contenteditable', 'false');
 		// articleEl.removeClass('edit-mode');
-		sortList(sorted);
+		//sortList(sorted);
 		appendList(makeMemoList());
 		memoListEl.find('li').eq(0).click();
 		alert('Saved');
@@ -249,7 +249,7 @@ $.ajax({
 	type: "GET",
 	url: 'https://api.parse.com/1/classes/TestObject',
 	data: {
-		limit: 5,
+		limit: 30,
 		order: "-updatedAt",
 		count: 1
 	}
