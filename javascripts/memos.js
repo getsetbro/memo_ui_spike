@@ -22,8 +22,12 @@ $.ajaxSetup({
 var newMemoHTM = '<div class="tbl"><div class="td tdr"><button id="saveMemo"><i class="fa fa-save"></i> Save</button></div>' +
 	'<div class="td"><small>Subject: </small><input placeholder="New subject here" id="subject"/></div></div>' +
 	'<div class="tbl"><div class="td"><small>Author: </small><input placeholder="Add author here" id="author"/></div></div>' +
-	'<div class="article-area"><fieldset class="mm-companies"><legend>Regarding</legend><button class="fr" id="addRegarding"><i class="fa fa-plus-circle"></i> Add</button></fieldset>' +
+	'<div class="article-area">'+
 	'<fieldset class="memo-info"><legend>Comment</legend><p><textarea placeholder="New comment here"rows="3" id="comments"></textarea></p></fieldset>' +
+		'<div class="memo-data"><small>Type: </small>' +
+		'<select id="memotype-new"><option value="Company">Company</option><option value="Contact">Contact</option><option value="Market Intelligence">Market Intelligence</option></select>'+
+		'</div>'+
+	'<fieldset class="mm-companies"><legend>Regarding</legend><button class="fr" id="addRegarding"><i class="fa fa-plus-circle"></i> Add</button></fieldset>' +
 	'</div><div class="tbl tbl-attached"><div class="td tdr"><button id="addFile"><i class="fa fa-paperclip"></i> Attach</button></div>' +
 	'<div class="td" id="attachments"><small>Attached: </small></div></div>';
 
@@ -45,11 +49,14 @@ memoListEl.on("click", "li", function(a) {
 		'<div class="tbl"><div class="td tdr"><button id="editMemo" class="edit-memo"><i class="fa fa-edit"></i> Edit</button>' +
 		'<button id="saveEdit" class="save-edit"><i class="fa fa-save"></i> Save</button></div>' +
 		'<div class="td"><small>Author: </small><span class="may-edit" id="author">' + obj.Author + '</span></div></div>' +
-		'<div class="article-area"><fieldset class="mm-companies"><legend>Regarding</legend>' +
+		'<div class="article-area">'+
+		'<fieldset class="memo-info"><legend>Comment</legend><p id="comments" class="may-edit">' + comment + '</p></fieldset>' +
+		'<div class="memo-data"><small>Type: </small><span class="editmodehide">' + obj.MemoType + '</span>' +
+		'<select class="editmodeshow" id="memotype-edit"><option value="Company">Company</option><option value="Contact">Contact</option><option value="Market Intelligence">Market Intelligence</option></select>'+
+		'</div>' +
+		'<fieldset class="mm-companies"><legend>Regarding</legend>' +
 		'<button class="fr editmodeshow" id="addRegarding"><i class="fa fa-plus-circle"></i> Add</button>' + regarding + '</fieldset>' +
-		'<fieldset class="memo-info"><legend>Comment</legend>' +
-		'<p id="comments" class="may-edit">' + comment + '</p></fieldset>' +
-		'<div class="memo-data"><small>Type: </small>' + obj.MemoType + '<br><small>Created by: </small>' + obj.CreatedBy + '<br><small>Created on: </small>' + obj.CreatedOn + '<br><small>Updated: </small>' + obj.UpdatedAt + '</div>' +
+		'<div class="memo-data"><small>Created by: </small>' + obj.CreatedBy + '<br><small>Created on: </small>' + obj.CreatedOn + '<br><small>Updated: </small>' + obj.UpdatedAt + '</div>' +
 		'</div><div class="tbl tbl-attached"><div class="td tdr"><button id="addFile" class="editmodeshow"><i class="fa fa-paperclip"></i> Attach</button></div>' +
 		'<div class="td" id="attachments"><small>Attached: </small>' + fn + '</div></div>');
 
@@ -99,7 +106,7 @@ articleEl.on('click', '#saveEdit', function() {
 			"Name": regarding
 		},
 		"MemoType": {
-			"Name": "Phone Call"
+			"Name": articleEl.find('#memotype-edit').val()
 		},
 		"FileName": articleEl.find('#attachments').find('a').eq(0).text()
 	};
@@ -134,13 +141,14 @@ articleEl.on('click', '#saveMemo', function() {
 	var subject = articleEl.find('#subject').val();
 	var author = articleEl.find('#author').val();
 	var comments = articleEl.find('#comments').val();
+	var memotype = articleEl.find('#memotype-new').val();
 	var regarding = articleEl.find('.mm-companies').find('a').eq(0).text();
 	var filename = articleEl.find('#attachments').find('a').eq(0).text();
 
 	var testObject = new TestObject();
 	testObject.save({
 		"MemoType": {
-			"Name": "Phone Call"
+			"Name": memotype
 		},
 		"Subject": subject,
 		"Comments": comments,
@@ -163,7 +171,7 @@ articleEl.on('click', '#saveMemo', function() {
 			Author: author,
 			CreatedBy: "McGoo, User",
 			FileName: filename,
-			MemoType: "Phone Call",
+			MemoType: "Company",
 			CreatedOn: moment(result.createdAt).format("MM/DD/YY hA"),
 			Updated: moment(result.updatedAt),
 			UpdatedAt: moment(result.updatedAt).format("MM/DD/YY hA")
@@ -197,6 +205,12 @@ articleEl.on('click', 'a', function(e) {
 	//   $(this).remove();
 	// }
 });
+memoListEl.on('click', '.selectbox', function(e) {
+	e.stopPropagation();
+	// if (window.confirm("Do you want to remove this?")) {
+	//   $(this).remove();
+	// }
+});
 
 var appendList = function(listArr) {
 	memoListEl.html(listArr);
@@ -208,6 +222,7 @@ var appendArticle = function(htm) {
 var makeMemoList = function() {
 	var memoList = $.map(sorted, function(o2, i2) {
 		return '<li data-index="' + i2 + '" data-id="' + o2.id + '">' +
+			'<input type="checkbox" class="selectbox"/>' +
 			'<span>' + o2.UpdatedAt + '</span>' +
 			'<h4>' + o2.Subject + '&nbsp;</h4>' +
 			'<div>' + o2.RegardingName + '&nbsp;</div>' +
@@ -261,21 +276,21 @@ $.ajax({
 	alert('Sorry, this app was unable to get the data it needs.');
 });
 
-$('#searchbutton').click(function() {
-	var searchterm = $('#searchbox').val();
-	var dt = '';
-	if (searchterm) {
-		dt = 'where={"Regarding.Name":"'+searchterm+'"}';
-	}
-	$.ajax({
-		type: "GET",
-		url: 'https://api.parse.com/1/classes/TestObject',
-		data: dt
-	}).done(function(data) {
-		gotMemos(data);
-		//click first one after items are appended to list
-		memoListEl.find('li').eq(0).click();
-	}).fail(function(jqXHR, status, err) {
-		alert('Sorry, this app was unable to get the data it needs.');
-	});
-});
+// $('#searchbutton').click(function() {
+//     var searchterm = $('#searchbox').val();
+//     var dt = '';
+//     if (searchterm) {
+//         dt = 'where={"Regarding.Name":"' + searchterm + '"}';
+//     }
+//     $.ajax({
+//         type: "GET",
+//         url: 'https://api.parse.com/1/classes/TestObject',
+//         data: dt
+//     }).done(function(data) {
+//         gotMemos(data);
+//         //click first one after items are appended to list
+//         memoListEl.find('li').eq(0).click();
+//     }).fail(function(jqXHR, status, err) {
+//         alert('Sorry, this app was unable to get the data it needs.');
+//     });
+// });
