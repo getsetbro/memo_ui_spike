@@ -161,8 +161,13 @@ var app = (function() {
 		query.descending("-createdAt");
 		query.limit(15);
 
-		query.count({success:function(count){
-			cnt = count;}
+		query.count({
+			success:function(count){
+				cnt = count;
+			},
+			error: function(error) {
+				alert("Error: " + error.code + " " + error.message);
+			}
 		});
 		query.find({
 			success: function(results) {
