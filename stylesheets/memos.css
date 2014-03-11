@@ -54,7 +54,7 @@ hr {
 }
 header {
   height: 40px;
-  line-height: 40px;
+  line-height: 38px;
   background-color: #333;
   background-image: linear-gradient(#444, #222);
   border-bottom: 2px solid #c30000;
@@ -196,6 +196,7 @@ ul {
   white-space: nowrap;
   text-overflow:ellipsis;
   overflow: hidden;
+  height: 14px;
 }
 #memoList li span {
   color: #005c78;
@@ -205,6 +206,12 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal;
+}
+h1{
+  font-size: 1.2em;
+}
+h2{
+  font-size: 1em;  
 }
 #memoList li h4 {
   font-weight: bold;
@@ -242,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 .daterange input {
-  width: 68px
+  width: 75px;
 }
 .fr {
   float: right;
@@ -256,15 +263,29 @@ i {
   border-top: 1px solid #dfe0e2;
 }
 
-.mm-companies a, #attachments a {
-  border-right:1px solid #999;
-  padding-right:8px;
-  padding-right:8px;
+.anch{
+  font-weight: normal;
+  background-color: #005c78;
+  padding: 1px 7px 2px;
+  border-radius: 2em;
+  line-height: 1
 }
-.mm-companies a:last-child, #attachments a:last-child{
-  border-right:0 none;
-  padding-right:0;
+.anch a{
+  color:#fff;
 }
+.anch-x{
+  display: inline-block;
+  margin-left: 8px;
+  background-color: #fff;
+  padding:0 4px;
+  border-radius: 2em;
+  cursor: pointer;
+}
+.anch-x:hover{
+  background-color: lightcoral;
+  color: #fff;
+}
+
 #subject{
   width:calc(100% - 50px);
 }

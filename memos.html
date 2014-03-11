@@ -12,39 +12,42 @@
 <body>
     <header class="clearfix">
         <div class="pull-right user"><i class="fa fa-user"></i> User McGoo</div>
-        App
+        <h1>App</h1>
     </header>
     <nav>
-        <p>Tabs</p>
         <small>Memos</small>
     </nav>
     <section>
         <div class="p grad1">
             <input type="search" placeholder="Search" class="searchbox" id="searchbox" /><!-- .
             --><button type="button" class="searchbutton" id="searchbutton"><i class="fa fa-search"></i></button> | 
-            <button type="button" id="newMemo"><i class="fa fa-plus-circle"></i> New Memo</button>
+            <button type="button" id="newMemo"><i class="fa fa-plus-circle"></i> New Memo</button> | 
+            <button type="button" id="exportBtn"><i class="fa fa-share"></i> Export</button>
         </div>
         <aside>
             <div class="tbl grad1">
                 <div class="daterange td tdr">
-                    <input type="text" placeholder="Start date"/><input type="text" placeholder="End date"> <button><i class="fa fa-filter"></i></button>
+                    <input type="text" placeholder="Start date"/><input type="text" placeholder="End date"><button><i class="fa fa-filter"></i></button>
                 </div>
                 <div class="td">
-                    Days: <button>7</button> <button>30</button> <button>60</button> <button>All</button>
+                    Days: <button>7</button><button>30</button><button>60</button><button>All</button>
                 </div>
             </div>
             <div class="aside-area">
                 <ul id="memoList"><li>Loading...</li></ul>
             </div>
             <div class="tbl tbl-memos">
-                <div class="td tdr">30 of 90</div>
-                <div class="td"><button disabled="true">&lt;</button> <b>1</b> <button>2</button> <button>3</button> <button>&gt;</button></div>
+                <div class="td tdr">Memos: <span id="resLength">x</span> of <span id="resTotal">y</span></div>
+                <div class="td tdr"><button disabled>&lt;</button> <b>1</b> <button disabled>&gt;</button></div>
+                <div class="td">
+                    Select: <button id="selectAllMemosList">All</button><button id="selectNoneMemosList">None</button>
+                </div>
             </div>
         </aside><!--
     .--><article><p>Loading...</p></article>
     </section>
 
-    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="//www.parsecdn.com/js/parse-1.2.17.min.js"></script>
     <script src="javascripts/moment.min.js"></script>
     <script src="javascripts/memos.js"></script>
