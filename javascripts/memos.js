@@ -1,4 +1,4 @@
-var app = function() {
+var app = (function() {
 	"use strict";
 
 	//main sorted array of objects
@@ -57,10 +57,13 @@ var app = function() {
 	memoListEl.on("click", "li", function(a) {
 		var obj = sorted[a.currentTarget.dataset.index];
 		var fn = (obj.FileName) ? '<b class="anch"><a href="#" class="anch">' + obj.FileName + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
-		var regarding = (obj.RegardingName) ? '<b class="anch"><a href="#">' + obj.RegardingName + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
+		//var regarding = (obj.RegardingName) ? '<b class="anch"><a href="#">' + obj.RegardingName + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
+		var recips = (typeof obj.Recipients !== "undefined" && obj.Recipients.length) ? '<b class="anch"><a href="#">'+obj.Recipients.join('</a><span class="editmode-btn anch-x">x<span></b><b class="anch"><a href="#">') + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
+		var filenames = (typeof obj.FileNames !== "undefined" && obj.FileNames.length) ? '<b class="anch"><a href="#">'+obj.FileNames.join('</a><span class="editmode-btn anch-x">x<span></b><b class="anch"><a href="#">') + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
 		var comment = (obj.Comments) ? obj.Comments : '';
 		currentMemo = a.currentTarget.dataset.index;
 		currentMemoId = a.currentTarget.dataset.id;
+
 		appendArticle('<div class="tbl"><div class="td tdr"><button id="deleteMemo"><i class="fa fa-trash-o"></i> Archive</button></div>' +
 			'<div class="td"><small>Subject: </small><span class="may-edit" id="subject">' + obj.Subject + '</span></div></div>' +
 			'<div class="tbl"><div class="td tdr"><button id="editMemo" class="edit-memo"><i class="fa fa-edit"></i> Edit</button>' +
@@ -72,10 +75,10 @@ var app = function() {
 			'<select class="editmodeshow" id="memotype-edit"><option value="Company">Company</option><option value="Contact">Contact</option><option value="Market Intelligence">Market Intelligence</option></select>' +
 			'</div>' +
 			'<fieldset class="mm-companies"><legend>Regarding</legend>' +
-			'<button class="fr editmodeshow" id="addRegarding"><i class="fa fa-plus-circle"></i> Add</button>' + regarding + '</fieldset>' +
+			'<button class="fr editmodeshow" id="addRegarding"><i class="fa fa-plus-circle"></i> Add</button>' + recips + '</fieldset>' +
 			'<div class="memo-data"><small>Created by: </small>' + obj.CreatedBy + '<br><small>Created: </small>' + obj.CreatedOn + '<br><small>Updated: </small>' + obj.UpdatedAt + '</div>' +
 			'</div><div class="tbl tbl-attached"><div class="td tdr"><button id="addFile" class="editmodeshow"><i class="fa fa-paperclip"></i> Attach</button></div>' +
-			'<div class="td" id="attachments"><small>Attached: </small>' + fn + '</div></div>');
+			'<div class="td" id="attachments"><small>Attached: </small>' + filenames + '</div></div>');
 
 		$(this).addClass('selected').siblings().removeClass('selected');
 		articleEl.removeClass('edit-mode');
@@ -101,10 +104,12 @@ var app = function() {
 				id: o1.id,
 				Subject: o1.attributes.Subject,
 				RegardingName: o1.attributes.Regarding.Name,
+				Recipients: o1.attributes.Recipients,
 				Comments: o1.attributes.Comments,
 				Author: o1.attributes.Author.Name,
 				CreatedBy: o1.attributes.CreatedBy.Name,
 				FileName: o1.attributes.FileName,
+				FileNames: o1.attributes.FileNames,
 				MemoType: o1.attributes.MemoType.Name,
 				CreatedOn: moment(o1.createdAt).fromNow(),
 				Updated: moment(o1.createdAt),
@@ -120,7 +125,7 @@ var app = function() {
 	// initial get of all items
 	var q1 = new Parse.Query(TestObject);
 	q1.descending("-createdAt");
-	q1.limit(10);
+	q1.limit(15);
 	q1.count({success:function(count){
 		cnt = count;}
 	});
@@ -144,7 +149,7 @@ var app = function() {
 		sb.contains("Subject", searchterm);
 
 		var rn = new Parse.Query("TestObject");
-		rn.contains("Regarding.Name", searchterm);
+		rn.contains("Recipients", searchterm);
 
 		var cm = new Parse.Query("TestObject");
 		cm.contains("Comments", searchterm);
@@ -156,14 +161,13 @@ var app = function() {
 		}
 
 		query.descending("-createdAt");
-		query.limit(10);
+		query.limit(15);
 
 		query.count({success:function(count){
 			cnt = count;}
 		});
 		query.find({
 			success: function(results) {
-				//alert("Successfully retrieved " + results.length + " scores.");
 				gotMemos(results);
 				//click first one after items are appended to list
 				memoListEl.find('li').eq(0).click();
@@ -216,21 +220,27 @@ var app = function() {
 	});
 
 	articleEl.on('click', '#saveEdit', function() {
-		var author = articleEl.find('#author').text();
-		var regarding = articleEl.find('.mm-companies').find('a').eq(0).text();
+		var recips = $.map(articleEl.find('.mm-companies a'), function (v,k) {
+			return $(v).text();
+		});
+		var filenames = $.map(articleEl.find('#attachments a'), function (v,k) {
+			return $(v).text();
+		});
 		var obj = {
 			"Subject": articleEl.find('#subject').text(),
 			"Author": {
-				"Name": author
+				"Name": articleEl.find('#author').text()
 			},
 			"Comments": articleEl.find('#comments').text(),
 			"Regarding": {
-				"Name": regarding
+				"Name": articleEl.find('.mm-companies').find('a').eq(0).text()
 			},
 			"MemoType": {
 				"Name": articleEl.find('#memotype-edit').val()
 			},
-			"FileName": articleEl.find('#attachments').find('a').eq(0).text()
+			"FileName": articleEl.find('#attachments').find('a').eq(0).text(),
+			"FileNames": filenames,
+			"Recipients": recips
 		};
 		var saveObject = new TestObject();
 		saveObject.set("objectId", currentMemoId);
@@ -240,8 +250,10 @@ var app = function() {
 			sorted[currentMemo].Author = obj.Author.Name;
 			sorted[currentMemo].Comments = obj.Comments;
 			sorted[currentMemo].RegardingName = obj.Regarding.Name;
+			sorted[currentMemo].Recipients = obj.Recipients;
 			sorted[currentMemo].MemoType = obj.MemoType.Name;
 			sorted[currentMemo].FileName = obj.FileName;
+			sorted[currentMemo].FileNames = obj.FileNames;
 			sorted[currentMemo].Updated = moment(result.updatedAt);
 			sorted[currentMemo].UpdatedAt = moment(result.updatedAt).calendar();
 
@@ -257,6 +269,12 @@ var app = function() {
 
 
 	articleEl.on('click', '#saveMemo', function() {
+		var recips = $.map(articleEl.find('.mm-companies a'), function (v,k) {
+			return $(v).text();
+		});
+		var filenames = $.map(articleEl.find('#attachments a'), function (v,k) {
+			return $(v).text();
+		});
 		var obj = {
 			"Subject": articleEl.find('#subject').val(),
 			"Author": {
@@ -267,12 +285,14 @@ var app = function() {
 				"Name": articleEl.find('.mm-companies').find('a').eq(0).text()
 			},
 			"MemoType": {
-				"Name": articleEl.find('#memotype-edit').val()
+				"Name": articleEl.find('#memotype-new').val()
 			},
 			"FileName": articleEl.find('#attachments').find('a').eq(0).text(),
+			"FileNames": filenames,
 			"CreatedBy": {
 				"Name": "McGoo, User"
 			},
+			"Recipients": recips
 		};
 
 		var testObject = new TestObject();
@@ -286,10 +306,12 @@ var app = function() {
 				Author: obj.Author.Name,
 				CreatedBy: obj.CreatedBy.Name,
 				FileName: obj.FileName,
+				FileNames: obj.FileNames,
 				MemoType: obj.MemoType.Name,
 				CreatedOn: moment(result.createdAt).fromNow(),
 				Updated: moment(result.updatedAt),
-				UpdatedAt: moment(result.updatedAt).calendar()
+				UpdatedAt: moment(result.updatedAt).calendar(),
+				Recipients: obj.Recipients
 			});
 			appendList(makeMemoList());
 			memoListEl.find('li').eq(0).click();
@@ -343,4 +365,12 @@ var app = function() {
 		memoListEl.find('li').eq(currentMemo).click();
 	});
 
-}();
+	var getSorted = function () {
+		return sorted;
+	};
+	return {
+		arr: function () {
+			return sorted;
+		}
+	};
+})();
