@@ -149,7 +149,7 @@ var app = (function() {
 		sb.contains("Subject", searchterm);
 
 		var rn = new Parse.Query("TestObject");
-		rn.contains("Recipients", searchterm);
+		rn.contains("Regarding.Name", searchterm);
 
 		var cm = new Parse.Query("TestObject");
 		cm.contains("Comments", searchterm);
@@ -233,7 +233,7 @@ var app = (function() {
 			},
 			"Comments": articleEl.find('#comments').text(),
 			"Regarding": {
-				"Name": articleEl.find('.mm-companies').find('a').eq(0).text()
+				"Name": articleEl.find('.mm-companies').find('a').text()
 			},
 			"MemoType": {
 				"Name": articleEl.find('#memotype-edit').val()
@@ -282,7 +282,7 @@ var app = (function() {
 			},
 			"Comments": articleEl.find('#comments').val(),
 			"Regarding": {
-				"Name": articleEl.find('.mm-companies').find('a').eq(0).text()
+				"Name": articleEl.find('.mm-companies').find('a').text()
 			},
 			"MemoType": {
 				"Name": articleEl.find('#memotype-new').val()
