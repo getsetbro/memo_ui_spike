@@ -155,6 +155,7 @@ var app = (function() {
 
 			var cm = new Parse.Query("TestObject");
 			cm.contains("Comments", searchterm);
+			
 			query = Parse.Query.or(sb, rn, cm);
 		}
 
