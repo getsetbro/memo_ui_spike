@@ -143,20 +143,18 @@ var app = (function() {
 
 
 	var searchGo = function() {
+		var query = new Parse.Query(TestObject);
 		var searchterm = $('#searchbox').val();
 
-		var sb = new Parse.Query("TestObject");
-		sb.contains("Subject", searchterm);
-
-		var rn = new Parse.Query("TestObject");
-		rn.contains("Regarding.Name", searchterm);
-
-		var cm = new Parse.Query("TestObject");
-		cm.contains("Comments", searchterm);
-
-		var query = new Parse.Query(TestObject);
-
 		if (searchterm) {
+			var sb = new Parse.Query("TestObject");
+			sb.contains("Subject", searchterm);
+
+			var rn = new Parse.Query("TestObject");
+			rn.contains("Regarding.Name", searchterm);
+
+			var cm = new Parse.Query("TestObject");
+			cm.contains("Comments", searchterm);
 			query = Parse.Query.or(sb, rn, cm);
 		}
 
