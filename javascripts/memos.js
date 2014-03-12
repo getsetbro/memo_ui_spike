@@ -55,7 +55,8 @@ var app = (function() {
 
 	//click memo item in the list
 	memoListEl.on("click", "li", function(a) {
-		var obj = sorted[a.currentTarget.dataset.index];
+		var index = $( "#memoList li" ).index( this );
+		var obj = sorted[index];
 		var fn = (obj.FileName) ? '<b class="anch"><a href="#" class="anch">' + obj.FileName + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
 		//var regarding = (obj.RegardingName) ? '<b class="anch"><a href="#">' + obj.RegardingName + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
 		var recips = (typeof obj.Recipients !== "undefined" && obj.Recipients.length) ? '<b class="anch"><a href="#">'+obj.Recipients.join('</a><span class="editmode-btn anch-x">x<span></b><b class="anch"><a href="#">') + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
