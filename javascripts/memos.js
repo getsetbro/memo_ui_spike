@@ -68,7 +68,8 @@ var app = (function() {
 		appendArticle('<div class="tbl"><div class="td tdr"><button id="deleteMemo"><i class="fa fa-trash-o"></i> Archive</button></div>' +
 			'<div class="td"><small>Subject: </small><span class="may-edit" id="subject">' + obj.Subject + '</span></div></div>' +
 			'<div class="tbl"><div class="td tdr"><button id="editMemo" class="edit-memo"><i class="fa fa-edit"></i> Edit</button>' +
-			'<button id="saveEdit" class="editmode-btn"><i class="fa fa-save"></i> Save</button> <button id="cancelEdit" class="editmode-btn"><i class="fa fa-save"></i> Cancel</button></div>' +
+			'<button id="saveEdit" class="editmode-btn" tabindex="-1"><i class="fa fa-save"></i> Save</button> '+
+			'<button id="cancelEdit" class="editmode-btn" tabindex="-1"><i class="fa fa-save"></i> Cancel</button></div>' +
 			'<div class="td"><small>Author: </small><span class="may-edit" id="author">' + obj.Author + '</span></div></div>' +
 			'<div class="article-area">' +
 			'<fieldset class="memo-info"><legend>Comment</legend><p id="comments" class="may-edit">' + comment + '</p></fieldset>' +
