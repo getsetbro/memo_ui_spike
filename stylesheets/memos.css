@@ -40,7 +40,7 @@ button[disabled]{
   border: 1px solid #ddd;
   cursor: default;
 }
-input {
+input[type="text"], input[type="search"] {
   border: 1px solid #ccc;
   border-radius: 3px;
   color: #000;
@@ -309,7 +309,7 @@ i {
 .edit-mode .editmodehide{
   display: none;
 }
-article [contenteditable=true]{
+span[contenteditable=true], p[contenteditable=true]{
   background-color: lightyellow;
   padding: 2px 8px;
   border:1px dotted lightcoral;

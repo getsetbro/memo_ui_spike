@@ -55,15 +55,15 @@ var app = (function() {
 
 	//click memo item in the list
 	memoListEl.on("click", "li", function(a) {
-		var index = $( "#memoList li" ).index( this );
-		var obj = sorted[index];
+		var thisindex = $(this).data('index');
+		var obj = sorted[thisindex];
 		var fn = (obj.FileName) ? '<b class="anch"><a href="#" class="anch">' + obj.FileName + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
 		//var regarding = (obj.RegardingName) ? '<b class="anch"><a href="#">' + obj.RegardingName + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
 		var recips = (typeof obj.Recipients !== "undefined" && obj.Recipients.length) ? '<b class="anch"><a href="#">'+obj.Recipients.join('</a><span class="editmode-btn anch-x">x<span></b><b class="anch"><a href="#">') + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
 		var filenames = (typeof obj.FileNames !== "undefined" && obj.FileNames.length) ? '<b class="anch"><a href="#">'+obj.FileNames.join('</a><span class="editmode-btn anch-x">x<span></b><b class="anch"><a href="#">') + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
 		var comment = (obj.Comments) ? obj.Comments : '';
-		currentMemo = a.currentTarget.dataset.index;
-		currentMemoId = a.currentTarget.dataset.id;
+		currentMemo = thisindex;
+		currentMemoId = $(this).data('id');
 
 		appendArticle('<div class="tbl"><div class="td tdr"><button id="deleteMemo"><i class="fa fa-trash-o"></i> Archive</button></div>' +
 			'<div class="td"><small>Subject: </small><span class="may-edit" id="subject">' + obj.Subject + '</span></div></div>' +
