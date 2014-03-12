@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="stylesheets/memos.css" />
     <link rel="stylesheet" href="stylesheets/datepicker.css" />
 </head>
-
-<body>
+<!--[if lt IE 10]><body class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--><body> <!--<![endif]-->
     <header class="clearfix">
         <div class="pull-right user"><i class="fa fa-user"></i> User McGoo</div>
         <h1>App</h1>
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="aside-area">
-                <ul id="memoList"><li>Loading...</li></ul>
+                <ul id="memoList"><p class='none-to-show'>Loading...</p></ul>
             </div>
             <div class="tbl tbl-memos">
                 <div class="td tdr">Memos: <span id="resLength">x</span> of <span id="resTotal">y</span></div>
@@ -44,7 +44,7 @@
                 </div>
             </div>
         </aside><!--
-    .--><article><p>Loading...</p></article>
+    .--><article><p class='none-to-show'>Loading...</p></article>
     </section>
 
     <script src="/javascripts/jquery-2.1.0.min.js"></script>

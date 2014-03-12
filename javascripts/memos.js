@@ -236,6 +236,7 @@ var app = (function() {
 		if(!subj){
 			//if subject is blank then do not save
 			alert("There must be a subject to save a memo");
+			articleEl.find('#subject').focus();
 			return false;
 		}
 		var recips = $.map(articleEl.find('.mm-companies a'), function (v,k) {
@@ -287,10 +288,11 @@ var app = (function() {
 
 
 	articleEl.on('click', '#saveMemo', function() {
-		var subj = articleEl.find('#subject').text();
+		var subj = articleEl.find('#subject').val();
 		if(!subj){
 			//if subject is blank dont save
 			alert("There must be a subject to save a memo");
+			articleEl.find('#subject').focus();
 			return false;
 		}
 		var recips = $.map(articleEl.find('.mm-companies a'), function (v,k) {
