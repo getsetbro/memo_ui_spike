@@ -292,9 +292,6 @@ i {
   color: #fff;
 }
 
-#subject{
-  width:calc(100% - 50px);
-}
 .editmode-btn,.edit-mode .edit-memo{
   display: none
 }
@@ -312,7 +309,10 @@ i {
 }
 span[contenteditable=true], p[contenteditable=true]{
   background-color: lightyellow;
-  padding: 2px 8px;
-  border:1px dotted lightcoral;
+  padding-left: 8px;
+  border: 1px dotted lightcoral;
+  display: inline-block;
+  line-height: 20px;
+  min-width: 150px
 }
 
