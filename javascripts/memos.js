@@ -86,15 +86,22 @@ var app = (function() {
 	});
 
 	var makeMemoList = function() {
-		var memoList = $.map(sorted, function(o2, i2) {
-			return '<li data-index="' + i2 + '" data-id="' + o2.id + '">' +
-				'<input type="checkbox" class="selectbox"/>' +
-				'<span>' + o2.CreatedOn + '</span>' +
-				'<h4>' + o2.Subject + '&nbsp;</h4>' +
-				'<div>' + o2.RegardingName + '&nbsp;</div>' +
-				'<div>' + o2.Comments + '&nbsp;</div></li>';
-		});
-		return memoList.join('');
+		//if there are items
+		if(sorted.length){
+			var memoList = $.map(sorted, function(o2, i2) {
+				var recips = (typeof o2.Recipients !== "undefined" && o2.Recipients.length) ? o2.Recipients.join(', ') : '';
+				return '<li data-index="' + i2 + '" data-id="' + o2.id + '">' +
+					'<input type="checkbox" class="selectbox"/>' +
+					'<span>' + o2.CreatedOn + '</span>' +
+					'<h4>' + o2.Subject + '&nbsp;</h4>' +
+					'<div>' + recips + '&nbsp;</div>' +
+					'<div>' + o2.Comments + '&nbsp;</div></li>';
+			});
+			return memoList.join('');
+		}
+		//if there are no items
+		appendArticle("<p class='none-to-show'>No item to show</p>");
+		return "<p class='none-to-show'>No items to show</p>";
 	};
 
 	var gotMemos = function(d) {
@@ -224,6 +231,12 @@ var app = (function() {
 	});
 
 	articleEl.on('click', '#saveEdit', function() {
+		var subj = articleEl.find('#subject').text();
+		if(!subj){
+			//if subject is blank then do not save
+			alert("There must be a subject to save a memo");
+			return false;
+		}
 		var recips = $.map(articleEl.find('.mm-companies a'), function (v,k) {
 			return $(v).text();
 		});
@@ -231,7 +244,7 @@ var app = (function() {
 			return $(v).text();
 		});
 		var obj = {
-			"Subject": articleEl.find('#subject').text(),
+			"Subject": subj,
 			"Author": {
 				"Name": articleEl.find('#author').text()
 			},
@@ -273,6 +286,12 @@ var app = (function() {
 
 
 	articleEl.on('click', '#saveMemo', function() {
+		var subj = articleEl.find('#subject').text();
+		if(!subj){
+			//if subject is blank dont save
+			alert("There must be a subject to save a memo");
+			return false;
+		}
 		var recips = $.map(articleEl.find('.mm-companies a'), function (v,k) {
 			return $(v).text();
 		});
@@ -280,7 +299,7 @@ var app = (function() {
 			return $(v).text();
 		});
 		var obj = {
-			"Subject": articleEl.find('#subject').val(),
+			"Subject": subj,
 			"Author": {
 				"Name": articleEl.find('#author').val()
 			},
