@@ -74,7 +74,8 @@ section {
   background-color: #f3f5f7;
 }
 small {
-  font-weight: bold
+  font-weight: bold;
+  text-transform: uppercase;
 }
 p {
   margin-top:0
@@ -157,6 +158,7 @@ legend {
 .memo-info {
   background-color: #fff;
   padding-bottom:1px;
+  min-height: 150px
 }
 
 .memo-data {
@@ -185,7 +187,7 @@ ul {
 .selectbox{
   position: absolute;
   top:38%;
-  left:10px;
+  left:6px;
 }
 #memoList li:hover{
   background-color: #d1d4d7;
@@ -217,7 +219,7 @@ h1{
   font-size: 1.2em;
 }
 h2{
-  font-size: 1em;  
+  font-size: 1em;
 }
 #memoList li h4 {
   font-weight: bold;
@@ -264,7 +266,7 @@ h2{
 i {
   font-size:14px;
 }
-.tbl-memos, .tbl-attached {
+.tbl-memos {
   border-bottom: 0 none;
   border-top: 1px solid #dfe0e2;
 }
