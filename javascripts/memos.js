@@ -54,7 +54,7 @@ var app = (function() {
     //new memo template
     var newMemoHTM = ''+
       '<div class="tbl"><div class="td tdr">' +
-        '<button id="saveMemo"><i class="fa fa-save"></i> Save</button> <button id="cancelNew"><i class="fa fa-save"></i> Cancel</button></div>' +
+        '<button id="saveMemo"><i class="fa fa-save"></i> Publish</button> <button id="cancelNew"><i class="fa fa-save"></i> Cancel</button></div>' +
         '<div class="td"><small>Subject: </small><input placeholder="New subject here" id="subject"/></div>'+
       '</div>' +
       '<div class="tbl">'+
@@ -334,7 +334,7 @@ var app = (function() {
             });
             appendList(makeMemoList());
             memoListEl.find('li').eq(0).click();
-            alert('Saved');
+            alert('Published');
         });
 
     });
