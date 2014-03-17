@@ -12,6 +12,18 @@ var app = (function() {
     var currentMemoId = null;
     var cnt = 0;
 
+    $(window).keydown(function(e){
+
+        if(e.which === 38){
+            memoListEl.find('li').eq( currentMemo - 1 ).click();
+        }
+        if(e.which === 40){
+            memoListEl.find('li').eq( currentMemo + 1 ).click();
+        }
+
+    });
+
+
     //ajax static values
     $.ajaxSetup({
         beforeSend: function(request) {
@@ -267,67 +279,6 @@ var app = (function() {
             });
         }
     });
-
-    // articleEl.on('click', '#editMemo', function() {
-    //     articleEl.find('.may-edit').attr('contenteditable', 'true');
-    //     articleEl.addClass('edit-mode');
-    // });
-
-    // articleEl.on('click', '#saveEdit', function() {
-    //     var subj = articleEl.find('#subject').text();
-    //     if (!subj) {
-    //         //if subject is blank then do not save
-    //         alert("There must be a subject to save a memo");
-    //         articleEl.find('#subject').focus();
-    //         return false;
-    //     }
-    //     var recips = $.map(articleEl.find('.mm-companies a'), function(v, k) {
-    //         return $(v).text();
-    //     });
-    //     var filenames = $.map(articleEl.find('#attachments a'), function(v, k) {
-    //         return $(v).text();
-    //     });
-    //     var obj = {
-    //         "Subject": subj,
-    //         "Author": {
-    //             "Name": articleEl.find('#author').text()
-    //         },
-    //         "Comments": articleEl.find('#comments').text(),
-    //         "Regarding": {
-    //             "Name": articleEl.find('.mm-companies').find('a').text()
-    //         },
-    //         "MemoType": {
-    //             "Name": articleEl.find('#memotype-edit').val()
-    //         },
-    //         "FileName": articleEl.find('#attachments').find('a').eq(0).text(),
-    //         "FileNames": filenames,
-    //         "Recipients": recips
-    //     };
-    //     var saveObject = new TestObject();
-    //     saveObject.set("objectId", currentMemoId);
-    //     saveObject.save(obj).then(function(result) {
-    //         //update
-    //         sorted[currentMemo].Subject = obj.Subject;
-    //         sorted[currentMemo].Author = obj.Author.Name;
-    //         sorted[currentMemo].Comments = obj.Comments;
-    //         sorted[currentMemo].RegardingName = obj.Regarding.Name;
-    //         sorted[currentMemo].Recipients = obj.Recipients;
-    //         sorted[currentMemo].MemoType = obj.MemoType.Name;
-    //         sorted[currentMemo].FileName = obj.FileName;
-    //         sorted[currentMemo].FileNames = obj.FileNames;
-    //         sorted[currentMemo].Updated = moment(result.updatedAt);
-    //         sorted[currentMemo].UpdatedAt = moment(result.updatedAt).format("MMM DD, YYYY");
-
-    //         appendList(makeMemoList());
-    //         memoListEl.find('li').eq(currentMemo).click();
-    //         alert('Saved');
-
-    //     }, function(error) {
-    //         alert("Could not update. " + error);
-    //     });
-
-    // });
-
 
     articleEl.on('click', '#saveMemo', function() {
         var subj = articleEl.find('#subject').val();
