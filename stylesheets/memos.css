@@ -9,7 +9,7 @@ body {
   font-size: 100%;
   font-family: Helvetica, Arial, sans-serif;
   background-color: #333;
-  color: #7d7e80;
+  color: #999;
   overflow: hidden;
 }
 a {
@@ -25,14 +25,20 @@ button, select {
   border: 1px solid #b6bdc3;
   background-color: #eee;
   border-radius: 3px;
-  color: #7d7e80;
+  color: #222;
   cursor: pointer;
   margin:0;
   padding: 2px 6px 3px;
 }
 button{
-  text-transform: uppercase;
   line-height: 14px;
+  background-image: linear-gradient(#f5f7f8, #e9edef);
+
+}
+#saveMemo{
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  color:#fff;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 button:hover, select:hover {
   background-color: #ddd;
@@ -46,7 +52,7 @@ input[type="text"], input[type="search"] {
   border-radius: 3px;
   color: #000;
   margin:0;
-  padding: 3px;
+  padding: 4px 3px 3px;
 }
 hr {
   border: 0 none;
@@ -72,10 +78,11 @@ section {
   height: calc(100% - 40px);
   margin-left:86px;
   background-color: #f3f5f7;
+    color: #222;
+
 }
 small {
   font-weight: bold;
-  text-transform: uppercase;
 }
 p {
   margin-top:0
@@ -101,18 +108,17 @@ section .p {
 .pull-right{
   float:right;
 }
-.grad1 {
-  background-color: #e9edef;
-  background-image: linear-gradient(#f5f7f8, #e9edef);
-}
 
-.searchbox {
+
+input[type="search"] {
   border-radius: 3px 0 0 3px;
   border-right:0 none;
   width: 318px;
 }
 .searchbutton {
   border-radius: 0 3px 3px 0;
+  vertical-align: top
+
 }
 aside, article {
   display: inline-block;
@@ -137,7 +143,9 @@ textarea{
   border:1px solid #dfe0e2;
   border-radius: 3px;
   width: 100%;
-  font-size: 1em;
+  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+
 }
 fieldset {
   font-size: .8em;
@@ -186,7 +194,7 @@ ul {
 }
 .selectbox{
   position: absolute;
-  top:38%;
+  top:4px;
   left:6px;
 }
 #memoList li:hover{
@@ -266,10 +274,7 @@ h2{
 i {
   font-size:14px;
 }
-.tbl-memos {
-  border-bottom: 0 none;
-  border-top: 1px solid #dfe0e2;
-}
+
 
 .anch{
   font-weight: normal;
@@ -294,21 +299,7 @@ i {
   color: #fff;
 }
 
-.editmode-btn,.edit-mode .edit-memo{
-  display: none
-}
-.edit-mode .editmode-btn{
-  display: inline;
-}
-.editmodeshow{
-  visibility: hidden;
-}
-.edit-mode .editmodeshow{
-  visibility: visible;
-}
-.edit-mode .editmodehide{
-  display: none;
-}
+
 span[contenteditable=true], p[contenteditable=true]{
   background-color: lightyellow;
   padding-left: 8px;

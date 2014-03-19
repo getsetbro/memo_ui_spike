@@ -22,7 +22,7 @@
             <input type="search" placeholder="Search" class="searchbox" id="searchbox" /><!-- .
             --><button type="button" class="searchbutton" id="searchbutton"><i class="fa fa-search"></i></button> |
             <button type="button" id="newMemo"><i class="fa fa-plus-circle"></i> New Memo</button> |
-            <button type="button" id="exportBtn"><i class="fa fa-share"></i> Export</button>
+            <button type="button" id="exportBtn"><i class="fa fa-download"></i> Export</button>
         </div>
         <aside>
             <div class="tbl grad1">
@@ -33,15 +33,15 @@
                     <small>Days: </small><button disabled>7</button><button disabled>30</button><button disabled>60</button><button disabled>All</button>
                 </div>
             </div>
-            <div class="aside-area">
-                <ul id="memoList"><p class='none-to-show'>Loading...</p></ul>
-            </div>
-            <div class="tbl tbl-memos">
+            <div class="tbl">
                 <div class="td tdr">Memos: <span id="resLength">x</span> of <span id="resTotal">y</span></div>
                 <div class="td tdr"><button disabled>&lt;</button> <b>1</b> <button disabled>&gt;</button></div>
                 <div class="td">
                     Select: <button id="selectAllMemosList">All</button><button id="selectNoneMemosList">None</button>
                 </div>
+            </div>
+            <div class="aside-area">
+                <ul id="memoList"><p class='none-to-show'>Loading...</p></ul>
             </div>
         </aside><!--
     .--><article><p class='none-to-show'>Loading...</p></article>

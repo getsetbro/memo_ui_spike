@@ -86,7 +86,7 @@ var app = (function() {
       '</div>'+
       '<div class="article-area">' +
         '<fieldset class="memo-info"><legend>Comment</legend>'+
-          '<p><textarea placeholder="New comment here"rows="6" id="comments"></textarea></p>'+
+          '<p><textarea placeholder="New comment here"rows="12" id="comments"></textarea></p>'+
         '</fieldset>' +
       '</div>'
       ;
@@ -97,8 +97,8 @@ var app = (function() {
         var obj = sorted[thisindex];
         //var fn = (obj.FileName) ? '<b class="anch"><a href="#" class="anch">' + obj.FileName + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
         //var regarding = (obj.RegardingName) ? '<b class="anch"><a href="#">' + obj.RegardingName + '</a><span class="editmode-btn anch-x">x<span></b>' : '';
-        var recips = (typeof obj.Recipients !== "undefined" && obj.Recipients.length) ? '<b class="anch"><a href="#">' + obj.Recipients.join('</a><span class="editmode-btn anch-x">x<span></b><b class="anch"><a href="#">') + '</a><span class="editmode-btn anch-x">x<span></b>' : '<em>none</em>';
-        var filenames = (typeof obj.FileNames !== "undefined" && obj.FileNames.length) ? '<b class="anch"><a href="#">' + obj.FileNames.join('</a><span class="editmode-btn anch-x">x<span></b><b class="anch"><a href="#">') + '</a><span class="editmode-btn anch-x">x<span></b>' : '<em>none</em>';
+        var recips = (typeof obj.Recipients !== "undefined" && obj.Recipients.length) ? '<b class="anch"><a href="#">' + obj.Recipients.join('</a></b><b class="anch"><a href="#">') + '</a></b>' : '<em>none</em>';
+        var filenames = (typeof obj.FileNames !== "undefined" && obj.FileNames.length) ? '<b class="anch2"><a href="#">' + obj.FileNames.join('</a></b><b class="anch2"><a href="#">') + '</a></b>' : '<em>none</em>';
         var comment = (obj.Comments) ? obj.Comments : '<em>empty<em>';
         currentMemo = thisindex;
         currentMemoId = $(this).data('id');
@@ -118,7 +118,7 @@ var app = (function() {
             '</div>' +
             '<div class="td">'+
               '<small>Author: </small><span class="may-edit" id="author">' + obj.Author + '</span>'+
-              '<small> By: </small>' + obj.CreatedBy + '<small> On: </small>' + obj.CreatedOn +
+              '<small> on </small>' + obj.CreatedOn +' ( by ' + obj.CreatedBy + ' )'+
             '</div>'+
           '</div>' +
           '<div class="tbl tbl-attached">'+
@@ -351,7 +351,7 @@ var app = (function() {
         //splice out deleted item and rebuild left
         var file = window.prompt("Please add a file here.", "New File.ext");
         if (file) {
-            articleEl.find('#attachments').append('<b class="anch"><a href="#" class="anch">' + file + '</a><span class="editmode-btn anch-x">x<span></b>');
+            articleEl.find('#attachments').append('<b class="anch2"><a href="#" class="anch2">' + file + '</a><span class="editmode-btn anch-x">x<span></b>');
         }
     });
 
